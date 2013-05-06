@@ -97,6 +97,8 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
         Camera camera;
         Vector3 pickedPosition = Vector3.Zero;
 
+        GeometryNode levelNode;
+        TransformNode levelTransNode;
         TransformNode poleTransNode;
         GeometryNode poleNode;
         TransformNode ballTransNode;
@@ -129,7 +131,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
 
         public void Initialize(IGraphicsDeviceService service, ContentManager content, VideoBrush videoBrush)
         {
-            
+
             viewport = new Viewport(0, 0, 800, 480);
             viewport.MaxDepth = service.GraphicsDevice.Viewport.MaxDepth;
             viewport.MinDepth = service.GraphicsDevice.Viewport.MinDepth;
@@ -139,7 +141,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             State.InitGoblin(service, content, "");
 
             LoadContent(content);
-            
+
             //State.ThreadOption = (ushort)ThreadOptions.MarkerTracking;
 
             // Initialize the scene graph
@@ -147,7 +149,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             scene.BackgroundColor = Color.Black;
 
             scene.PhysicsEngine = new MataliPhysics();
-            
+
             scene.PhysicsEngine.Gravity = 0f;
             ((MataliPhysics)scene.PhysicsEngine).SimulationTimeStep = 1 / 30f;
             //MouseInput.Instance.MouseClickEvent += new HandleMouseClick(MouseClickHandler);
@@ -229,7 +231,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                 captureDevice = new NullCapture();
                 captureDevice.InitVideoCapture(0, FrameRate._30Hz, Resolution._320x240,
                     ImageFormat.B8G8R8A8_32, false);
-                if(useSingleMarker)
+                if (useSingleMarker)
                     ((NullCapture)captureDevice).StaticImageFile = "MarkerImageHiro.jpg";
                 else
                     ((NullCapture)captureDevice).StaticImageFile = "MarkerImage_320x240";
@@ -267,7 +269,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             // Set the marker tracker to use for our scene
             scene.MarkerTracker = tracker;
 
-            
+
         }
 
         private void CreateObjects(ContentManager content)
@@ -327,7 +329,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             //boxMaterial.Texture = content.Load<Texture2D>("wood");
 
             boxNode.Material = boxMaterial;
-            
+
             boxNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Box;
             boxNode.Physics.Collidable = true;
             boxNode.Physics.Mass = 10f;
@@ -337,7 +339,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             boxNode.AddToPhysicsEngine = true;
 
             boxTransNode = new TransformNode();
-            boxTransNode.Translation = new Vector3(0, - markerSize * 2, 0);
+            boxTransNode.Translation = new Vector3(0, -markerSize * 2, 0);
             // Add this box model node to the ground marker node
             groundMarkerNode.AddChild(boxTransNode);
             boxTransNode.AddChild(boxNode);
@@ -345,7 +347,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             panels.Add(new Vector3(0 - 25, -markerSize * 2, 0 - 25));
             panels.Add(new Vector3(0 - 25, -markerSize * 2, 0 + 25));
             panels.Add(new Vector3(0 + 25, -markerSize * 2, 0 - 25));
-            panels.Add(new Vector3(0,1,0));
+            panels.Add(new Vector3(0, 1, 0));
             panelsnum++;
 
             // Create a Cylinder
@@ -380,12 +382,12 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             ModelLoader loader = new ModelLoader();
 
 
-            GeometryNode levelNode = new GeometryNode("level1");
+            levelNode = new GeometryNode("level1");
             levelNode.Model = (Model)loader.Load("", "bouncelevel1panels");
             ((Model)levelNode.Model).UseInternalMaterials = true;
             Vector3 dimension = Vector3Helper.GetDimensions(levelNode.Model.MinimumBoundingBox);
             float scale2 = markerSize / Math.Max(dimension.X, dimension.Z) * 5;
-            TransformNode levelTransNode = new TransformNode()
+            levelTransNode = new TransformNode()
             {
                 Translation = new Vector3(0, 0, 0),
                 //Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90)) *
@@ -405,7 +407,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
 
 
             poleNode = new GeometryNode("Pole");
-            poleNode.Model = new Box(20,100,20); 
+            poleNode.Model = new Box(20, 100, 20);
 
             // Create a material to apply to the box model
             Material boxMaterial = new Material();
@@ -416,13 +418,16 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
 
             poleNode.Material = boxMaterial;
 
+            poleNode.Physics = new MataliObject(poleNode);
             poleNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Box;
 
             //poleNode.Physics.Interactable = true;
             //craftNode.Physics.Pickable = true;
             poleNode.Physics.Collidable = true;
             poleNode.Physics.Mass = 100f;
-            
+
+            ((MataliObject)poleNode.Physics).CollisionStartCallback = ToolBar1CollideWithObject;
+
             //craftNode.Physics.InitialLinearVelocity = Vector3.Zero;
             poleNode.AddToPhysicsEngine = true;
 
@@ -518,7 +523,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
         {
             State.Device.Viewport = viewport;
 
-            UI2DRenderer.WriteText(new Vector2(10,10), label, Color.GreenYellow, sampleFont);
+            UI2DRenderer.WriteText(new Vector2(10, 10), label, Color.GreenYellow, sampleFont);
             UI2DRenderer.WriteText(new Vector2(10, 30), ballTransNode.Translation.ToString(), Color.GreenYellow, sampleFont);
             UI2DRenderer.WriteText(new Vector2(10, 70), resultlabel, Color.GreenYellow, sampleFont);
             UI2DRenderer.WriteText(new Vector2(10, 100), ballTransNode.Translation.ToString(), Color.GreenYellow, sampleFont);
@@ -552,8 +557,8 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
 
                 switch (selectedObj)
                 {
-                    case "level1" :
-                        Vector3 cueVector = polmat.Translation - initialSelectedPosition;
+                    case "level1":
+                        Vector3 cueVector = polemat.Translation - initialSelectedPosition;
                         Vector3 abs_cueVector = new Vector3(Math.Abs(cueVector.X), Math.Abs(cueVector.Y), Math.Abs(cueVector.Z));
                         float scaledLength = abs_cueVector.Length();
                         float direction = 1;
@@ -571,7 +576,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                                 if (cueVector.Y > 0)
                                     direction = -1;
                                 Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationX(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelTransNode.WorldTransformation);
-                                levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;   
+                                levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
                             }
                             else if (abs_cueVector.Z > abs_cueVector.X && abs_cueVector.Z > abs_cueVector.Y)
                             {
@@ -583,7 +588,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                         }
                         else if (transMode == "SCALING" && scaledLength > 100)
                         {
-                            float scale = (float)Math.Pow(newPos.Length() / 100, 2);
+                            float scale = (float)Math.Pow(abs_cueVector.Length() / 100, 2);
                             levelTransNode.Scale = new Vector3(scale, scale, scale);
                         }
                         break;
@@ -605,51 +610,51 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
 
             if (toolbarMarkerNode1.MarkerFound && toolbarMarkerNode2.MarkerFound)
             {
-                
-                    if (!ball_on)
-                    {
-                        Vector3 tail, head, linVel;   
-                        tail = Vector3.Transform(new Vector3(0, -150, 0), toolbarMarkerNode1.WorldTransformation);
-                        tail = Vector3.Transform(tail, Matrix.Invert(groundMarkerNode.WorldTransformation));
-                        head = Vector3.Transform(new Vector3(0, 100, 0), toolbarMarkerNode1.WorldTransformation);
-                        head = Vector3.Transform(head, Matrix.Invert(groundMarkerNode.WorldTransformation));
-                        linVel = head - tail;
-                        linVel.Normalize();
-                        linVel *= 400f;
-                        
 
-                        //craftNode.Physics.Interactable = true;
-
-                        /*
-                        Vector3 origin = Vector3.Transform(new Vector3(0, 0, 0), groundMarkerNode.WorldTransformation);
-                        Vector3 balltrans = Vector3.Transform(new Vector3(0, 75, 0), toolbarMarkerNode1.WorldTransformation);
-                        Matrix mat = Matrix.CreateTranslation(new Vector3(0, 75, 0)) * Matrix.Invert(groundMarkerNode.WorldTransformation);
-                        
-                        toolbarMarkerNode1.RemoveChild(ballTransNode);
-                        groundMarkerNode.AddChild(ballTransNode);
-                        
-                        ballTransNode.Translation = Vector3.Transform(balltrans, Matrix.Invert(groundMarkerNode.WorldTransformation));
-                        */
-                         
-                        //ballTransNode.Translation = balltrans - origin;
-                        //ballTransNode.WorldTransformation = mat;
-                        //((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, mat);
-                        //ballTransNode.Translation = Vector3.Transform(Vector3.Transform(new Vector3(0, 75, 0), toolbarMarkerNode1.WorldTransformation),Matrix.Invert(groundMarkerNode.WorldTransformation));
-                        ballNode.Physics.InitialLinearVelocity = linVel;
-                        
-                        scene.PhysicsEngine.RestartsSimulation();
-                        //toolbarMarkerNode1.Update(1 / 30f);
-                        
-                        //scene.PhysicsEngine.Update(1 / 30f);
+                if (!ball_on)
+                {
+                    Vector3 tail, head, linVel;
+                    tail = Vector3.Transform(new Vector3(0, -150, 0), toolbarMarkerNode1.WorldTransformation);
+                    tail = Vector3.Transform(tail, Matrix.Invert(groundMarkerNode.WorldTransformation));
+                    head = Vector3.Transform(new Vector3(0, 100, 0), toolbarMarkerNode1.WorldTransformation);
+                    head = Vector3.Transform(head, Matrix.Invert(groundMarkerNode.WorldTransformation));
+                    linVel = head - tail;
+                    linVel.Normalize();
+                    linVel *= 400f;
 
 
-                        ball_on = true;
-                        label = "Shoot!";
+                    //craftNode.Physics.Interactable = true;
 
-                    }
-                
+                    /*
+                    Vector3 origin = Vector3.Transform(new Vector3(0, 0, 0), groundMarkerNode.WorldTransformation);
+                    Vector3 balltrans = Vector3.Transform(new Vector3(0, 75, 0), toolbarMarkerNode1.WorldTransformation);
+                    Matrix mat = Matrix.CreateTranslation(new Vector3(0, 75, 0)) * Matrix.Invert(groundMarkerNode.WorldTransformation);
+                        
+                    toolbarMarkerNode1.RemoveChild(ballTransNode);
+                    groundMarkerNode.AddChild(ballTransNode);
+                        
+                    ballTransNode.Translation = Vector3.Transform(balltrans, Matrix.Invert(groundMarkerNode.WorldTransformation));
+                    */
+
+                    //ballTransNode.Translation = balltrans - origin;
+                    //ballTransNode.WorldTransformation = mat;
+                    //((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, mat);
+                    //ballTransNode.Translation = Vector3.Transform(Vector3.Transform(new Vector3(0, 75, 0), toolbarMarkerNode1.WorldTransformation),Matrix.Invert(groundMarkerNode.WorldTransformation));
+                    ballNode.Physics.InitialLinearVelocity = linVel;
+
+                    scene.PhysicsEngine.RestartsSimulation();
+                    //toolbarMarkerNode1.Update(1 / 30f);
+
+                    //scene.PhysicsEngine.Update(1 / 30f);
+
+
+                    ball_on = true;
+                    label = "Shoot!";
+
+                }
+
             }
-            
+
 
             /*
             Vector3 camPosition;
@@ -847,7 +852,8 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             }
             lasernum = 0;
 
-            while(bounce-- > 0){
+            while (bounce-- > 0)
+            {
 
                 hitted = false;
 
@@ -863,7 +869,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                     p2 = Vector3.Transform(panels[i * 4 + 2], groundMarkerNode.WorldTransformation);
                     ia = tail; // Vector3.Transform(tail, groundMarkerNode.WorldTransformation);
                     ib = head; // Vector3.Transform(head, groundMarkerNode.WorldTransformation);
-                    
+
                     Matrix coef = new Matrix(ia.X - ib.X, ia.Y - ib.Y, ia.Z - ib.Z, 0, p1.X - p0.X, p1.Y - p0.Y, p1.Z - p0.Z, 0, p2.X - p0.X, p2.Y - p0.Y, p2.Z - p0.Z, 0, 0, 0, 0, 1);
                     if (coef.Determinant() == 0)
                         continue;
@@ -914,7 +920,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
 
                     laserNode[lasernum].Material = laserMaterial;
 
-                    laserTransNode[lasernum] = new TransformNode(); 
+                    laserTransNode[lasernum] = new TransformNode();
 
                     Vector3 gtail = Vector3.Transform(tail, Matrix.Invert(groundMarkerNode.WorldTransformation));
                     Vector3 ghead = Vector3.Transform(head, Matrix.Invert(groundMarkerNode.WorldTransformation));
@@ -932,7 +938,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                     break;
                 }
 
-                
+
 
             }
 
@@ -1068,7 +1074,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
         }
         */
 
-        
+
         private void CreateTags(ContentManager content)
         {
             G2DPanel cameraframe = new G2DPanel();
@@ -1104,7 +1110,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
         {
             G2DComponent comp = (G2DComponent)source;
 
-            switch (comp)
+            switch (comp.Text)
             {
                 case "reset":
                     ballNode.Physics.InitialLinearVelocity = new Vector3(0, 0, 0);
@@ -1112,7 +1118,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                     scene.PhysicsEngine.RestartsSimulation();
                     ((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0));
                     ballTransNode.WorldTransformation = Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0);
-                    
+
                     //toolbarMarkerNode1.Update(1 / 30f);
 
                     //scene.PhysicsEngine.Update(1 / 30f);
@@ -1262,7 +1268,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
 
         }
         */
-           
+
         /*
         private void CreateTags1(ContentManager content)
         {
