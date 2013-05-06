@@ -36,38 +36,29 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Media;
-
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Color = Microsoft.Xna.Framework.Color;
-using Matrix = Microsoft.Xna.Framework.Matrix;
-
 using GoblinXNA;
 using GoblinXNA.Graphics;
 using GoblinXNA.SceneGraph;
-using Model = GoblinXNA.Graphics.Model;
 using GoblinXNA.Graphics.Geometry;
-using GoblinXNA.Device.Generic;
 using GoblinXNA.Device.Capture;
-using GoblinXNA.Device.Vision;
 using GoblinXNA.Device.Vision.Marker;
-using GoblinXNA.Device.Util;
 using GoblinXNA.Helpers;
 using GoblinXNA.UI;
 using GoblinXNA.UI.UI2D;
-
 using GoblinXNA.Physics;
 using GoblinXNA.Physics.Matali;
-using Komires.MataliPhysics;
-using MataliPhysicsObject = Komires.MataliPhysics.PhysicsObject;
+using Color = Microsoft.Xna.Framework.Color;
+using Matrix = Microsoft.Xna.Framework.Matrix;
+using Model = GoblinXNA.Graphics.Model;
+using PhysicsObject = Komires.MataliPhysics.PhysicsObject;
 #if WINDOWS_PHONE
-using GoblinXNA.Graphics.ParticleEffects2D;
+
 #endif
 
-namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
+namespace BounceLib
 {
     public class Tutorial8_Phone
     {
@@ -1144,7 +1135,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             }
         }
 
-        private void ToolBar1CollideWithObject(MataliPhysicsObject baseObject, MataliPhysicsObject collidingObject)
+        private void ToolBar1CollideWithObject(PhysicsObject baseObject, PhysicsObject collidingObject)
         {
             string materialName = ((IPhysicsObject)collidingObject.UserTagObj).MaterialName;
             if (materialName == "level1")

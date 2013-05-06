@@ -94,12 +94,15 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Background.png.png" />
+    <Content Include="BounceIcon.png" />
+    <Content Include="GameThumbnail.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tutorial8 - Optical Marker Tracking - Phone.csproj">
+    <ProjectReference Include="..\BounceLib.csproj">
       <Project>{4D06C9D8-33C0-4DF4-82E3-7CD29FE7BC89}</Project>
-      <Name>Tutorial8 - Optical Marker Tracking - Phone</Name>
+      <Name>BounceLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />

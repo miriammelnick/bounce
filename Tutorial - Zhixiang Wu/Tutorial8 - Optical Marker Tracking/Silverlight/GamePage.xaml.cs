@@ -40,12 +40,11 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BounceLib;
 using Microsoft.Phone.Controls;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-
-using Tutorial8___Optical_Marker_Tracking___PhoneLib;
 
 namespace Tutorial8___Optical_Marker_Tracking___Phone
 {

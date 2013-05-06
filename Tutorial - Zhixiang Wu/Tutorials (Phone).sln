@@ -2,9 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial8 - Optical Marker Tracking - Silverlight", "Tutorial8 - Optical Marker Tracking\Silverlight\Tutorial8 - Optical Marker Tracking - Silverlight.csproj", "{C45849B3-D344-4BEA-BF26-890D1F6A5202}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial8 - Optical Marker Tracking - Phone", "Tutorial8 - Optical Marker Tracking\Tutorial8 - Optical Marker Tracking - Phone.csproj", "{4D06C9D8-33C0-4DF4-82E3-7CD29FE7BC89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BounceLib", "Tutorial8 - Optical Marker Tracking\BounceLib.csproj", "{4D06C9D8-33C0-4DF4-82E3-7CD29FE7BC89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial8 - Optical Marker Tracking - PhoneContent", "Tutorial8 - Optical Marker Tracking\Content\Tutorial8 - Optical Marker Tracking - PhoneContent.contentproj", "{5D6CF3FC-3284-40C3-A428-2B5A03BCB208}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BounceLibContent", "Tutorial8 - Optical Marker Tracking\Content\BounceLibContent.contentproj", "{5D6CF3FC-3284-40C3-A428-2B5A03BCB208}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
