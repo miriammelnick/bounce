@@ -1,0 +1,132 @@
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\NyARIdGroundArray.xml
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\NyARToolkitGroundArray.xml
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\NyARToolkitIDGroundArray.xml
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\camera_para.dat
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker0.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker1.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker10.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker11.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker12.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker13.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker14.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker15.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker16.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker17.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker18.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker19.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker2.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker20.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker21.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker22.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker23.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker24.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker25.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker26.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker27.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker28.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker29.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker3.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker30.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker4.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker5.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker6.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker7.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker8.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\marker9.patt
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\patt.hiro
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\MarkerImageHiro.jpg
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\ApplicationIcon.png
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\Background.png
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\Content\DebugFont.xnb
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\Content\Sample.xnb
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\Content\MarkerImage_320x240.xnb
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\Tutorial8 - Optical Marker Tracking - Silverlight.dll
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\Tutorial8 - Optical Marker Tracking - Silverlight.pdb
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\AppManifest.xaml
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\bin\Windows Phone\Tutorial8___Optical_Marker_Tracking___Phone.xap
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\Tutorial8 - Optical Marker Tracking - Silverlight.csprojResolveAssemblyReference.cache
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\App.g.cs
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\GamePage.g.cs
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\Tutorial8 - Optical Marker Tracking - Silverlight.g.resources
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\Tutorial8 - Optical Marker Tracking - Silverlight.dll
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\Tutorial8 - Optical Marker Tracking - Silverlight.pdb
+D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\tutorials\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\XapCacheFile.xml
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\Object.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\rotation.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\rotate.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\S.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\t.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\camera.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\transfer.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\reset.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\hikingsticktexture.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\UIFont.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\Sample.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\DebugFont.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\golf_ball.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\hikingstick3.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\Object.png
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\rotation.jpg
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\UIFont.spritefont
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\camera.png
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\transfer.png
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\reset.jpg
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\Sample.spritefont
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\DebugFont.spritefont
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\hikingstick3.fbx
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\NyARIdGroundArray.xml
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\NyARToolkitGroundArray.xml
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\NyARToolkitIDGroundArray.xml
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\NyARToolkitIDToolbar3.xml
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\NyARToolkitIDToolbar4.xml
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\NyARToolkitIDToolbar5.xml
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\camera_para.dat
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker0.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker1.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker10.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker11.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker12.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker13.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker14.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker15.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker16.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker17.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker18.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker19.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker2.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker20.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker21.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker22.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker23.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker24.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker25.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker26.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker27.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker28.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker29.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker3.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker30.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker4.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker5.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker6.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker7.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker8.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\marker9.patt
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\patt.hiro
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\MarkerImageHiro.jpg
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\ApplicationIcon.png
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Background.png
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Tutorial8 - Optical Marker Tracking - Silverlight.dll
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Tutorial8 - Optical Marker Tracking - Silverlight.pdb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\AppManifest.xaml
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Tutorial8___Optical_Marker_Tracking___Phone.xap
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\Tutorial8 - Optical Marker Tracking - Silverlight.csprojResolveAssemblyReference.cache
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\App.g.cs
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\GamePage.g.cs
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\Tutorial8 - Optical Marker Tracking - Silverlight.g.resources
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\Tutorial8 - Optical Marker Tracking - Silverlight.dll
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\Tutorial8 - Optical Marker Tracking - Silverlight.pdb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Release\XapCacheFile.xml
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\bouncelevel1panels.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb
+D:\dropbox\Dropbox\courses\3D UserInterface & AugmentedReality\project\Tutorial\bin\Windows Phone\Content\bouncelevel1panels.fbx
