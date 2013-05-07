@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>RootNode</Name>
     <Identity>
-      <SourceFilename>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\hikingstick3.fbx</SourceFilename>
+      <SourceFilename>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\hikingstick3.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -33,7 +33,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>Stick__hikingsticktexture_jp</Name>
       <Identity>
-        <SourceFilename>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\hikingstick3.fbx</SourceFilename>
+        <SourceFilename>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\hikingstick3.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

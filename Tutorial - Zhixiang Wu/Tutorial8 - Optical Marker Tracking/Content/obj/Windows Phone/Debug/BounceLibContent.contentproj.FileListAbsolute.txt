@@ -1,0 +1,1 @@
+C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\obj\Windows Phone\Debug\BounceLibContent.contentprojResolveAssemblyReference.cache

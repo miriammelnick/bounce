@@ -582,6 +582,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                     ballNode.Physics.InitialLinearVelocity = linVel;
 
                     laserGroup.RemoveChildren();
+                    laserNum = 0;
                     scene.PhysicsEngine.RestartsSimulation();
                     //toolbarMarkerNode1.Update(1 / 30f);
 
@@ -648,6 +649,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                     ballNode.Physics.InitialLinearVelocity = new Vector3(0, 0, 0);
 
                     laserGroup.RemoveChildren();
+                    laserNum = 0;
                     scene.PhysicsEngine.RestartsSimulation();
                     ((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0));
                     ballTransNode.WorldTransformation = Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0);

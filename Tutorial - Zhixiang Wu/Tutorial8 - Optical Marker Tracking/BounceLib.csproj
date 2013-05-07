@@ -45,10 +45,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GoblinXNA">
-      <HintPath>..\..\..\..\..\..\Program Files\GoblinXNAv4.0\bin\Windows Phone\GoblinXNA.dll</HintPath>
+      <HintPath>D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\bin\Windows Phone\GoblinXNA.dll</HintPath>
     </Reference>
     <Reference Include="MataliPhysics">
-      <HintPath>..\..\..\..\..\..\Program Files\GoblinXNAv4.0\bin\Windows Phone\MataliPhysics.dll</HintPath>
+      <HintPath>D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\bin\Windows Phone\MataliPhysics.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Xna.Framework" />
     <Reference Include="Microsoft.Xna.Framework.Game" />
