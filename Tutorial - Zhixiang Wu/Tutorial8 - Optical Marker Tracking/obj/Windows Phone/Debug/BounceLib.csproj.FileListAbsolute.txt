@@ -255,3 +255,15 @@ C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Opti
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\BounceLib.dll
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\BounceLib.pdb
+C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\fire.xnb
+C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\smoke.xnb
+C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\explosion.xnb
+C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\smoke.png
+C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\explosion.png
+C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\fire.png
+C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\fire.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\smoke.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\explosion.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\smoke.png
+C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\explosion.png
+C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\fire.png

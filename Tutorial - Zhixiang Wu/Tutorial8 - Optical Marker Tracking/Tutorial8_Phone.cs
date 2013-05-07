@@ -1024,7 +1024,5 @@ namespace BounceLib
                     break;
             }
         }
-
-
     }
 }

@@ -83,6 +83,33 @@
       <Time>2013-05-06T14:14:14.2123767-04:00</Time>
     </Item>
     <Item>
+      <Source>fire.png</Source>
+      <Name>fire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\fire.xnb</Output>
+      <Time>2013-05-07T15:47:28.7175281-04:00</Time>
+    </Item>
+    <Item>
+      <Source>smoke.png</Source>
+      <Name>smoke</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\smoke.xnb</Output>
+      <Time>2013-05-07T15:47:28.7305342-04:00</Time>
+    </Item>
+    <Item>
+      <Source>explosion.png</Source>
+      <Name>explosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\explosion.xnb</Output>
+      <Time>2013-05-07T15:47:28.7145228-04:00</Time>
+    </Item>
+    <Item>
       <Source>size.fbx</Source>
       <Name>size</Name>
       <Importer>FbxImporter</Importer>
@@ -92,7 +119,7 @@
       <Time>2013-05-07T14:07:20.2723582-04:00</Time>
       <Dependency>
         <Key>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\size_0.xml</Key>
-        <Value>2013-05-07T15:59:04.03403-04:00</Value>
+        <Value>2013-05-07T16:03:57.4987543-04:00</Value>
       </Dependency>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cube_2Surface_Color_0.xnb</Request>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\CylinderSurface_Color_0.xnb</Request>
@@ -110,7 +137,7 @@
       <Time>2013-05-06T14:14:14.199537-04:00</Time>
       <Dependency>
         <Key>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\golf_ball_0.xml</Key>
-        <Value>2013-05-07T15:59:05.5172643-04:00</Value>
+        <Value>2013-05-07T16:03:59.1720996-04:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -123,7 +150,7 @@
       <Time>2013-05-06T14:14:14.199537-04:00</Time>
       <Dependency>
         <Key>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\hikingstick3_0.xml</Key>
-        <Value>2013-05-07T15:59:05.7384137-04:00</Value>
+        <Value>2013-05-07T16:03:59.3364686-04:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -136,7 +163,7 @@
       <Time>2013-05-06T19:24:47.0480283-04:00</Time>
       <Dependency>
         <Key>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\bouncelevel1panels_0.xml</Key>
-        <Value>2013-05-07T15:59:05.869737-04:00</Value>
+        <Value>2013-05-07T16:03:59.4552238-04:00</Value>
       </Dependency>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb</Request>
     </Item>
@@ -150,7 +177,7 @@
       <Time>2013-05-07T13:53:57.1509833-04:00</Time>
       <Dependency>
         <Key>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\Cancel_0.xml</Key>
-        <Value>2013-05-07T15:59:06.1106631-04:00</Value>
+        <Value>2013-05-07T16:03:59.7396033-04:00</Value>
       </Dependency>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_1Surface_Color_1.xnb</Request>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_2Surface_Color_0.xnb</Request>
@@ -166,7 +193,7 @@
       <Time>2013-05-07T13:53:57.1665593-04:00</Time>
       <Dependency>
         <Key>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\Exit_0.xml</Key>
-        <Value>2013-05-07T15:59:06.5147862-04:00</Value>
+        <Value>2013-05-07T16:04:00.2067596-04:00</Value>
       </Dependency>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_1Surface_Color_2.xnb</Request>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_2Surface_Color_1.xnb</Request>
@@ -182,7 +209,7 @@
       <Time>2013-05-07T13:53:57.1822001-04:00</Time>
       <Dependency>
         <Key>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\Reset2_0.xml</Key>
-        <Value>2013-05-07T15:59:06.9813276-04:00</Value>
+        <Value>2013-05-07T16:04:00.7213761-04:00</Value>
       </Dependency>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_1Surface_Color_3.xnb</Request>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_2Surface_Color_2.xnb</Request>
@@ -198,7 +225,7 @@
       <Time>2013-05-07T13:53:57.1822001-04:00</Time>
       <Dependency>
         <Key>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\Rsign_0.xml</Key>
-        <Value>2013-05-07T15:59:07.396876-04:00</Value>
+        <Value>2013-05-07T16:04:01.2376181-04:00</Value>
       </Dependency>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Sweep_NURBS.1Surface_Color_0.xnb</Request>
     </Item>
@@ -212,7 +239,7 @@
       <Time>2013-05-07T13:53:57.1977619-04:00</Time>
       <Dependency>
         <Key>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\Save_0.xml</Key>
-        <Value>2013-05-07T15:59:07.7023786-04:00</Value>
+        <Value>2013-05-07T16:04:01.5401446-04:00</Value>
       </Dependency>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_1Surface_Color_4.xnb</Request>
       <Request>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_2Surface_Color_3.xnb</Request>
@@ -266,7 +293,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cube_2Surface_Color_0.xnb</Output>
-      <Time>2013-05-07T15:59:03.8240349-04:00</Time>
+      <Time>2013-05-07T16:03:57.2787357-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\58982D0D\size.fbm\CylinderSurface_Color.png</Source>
@@ -282,7 +309,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\CylinderSurface_Color_0.xnb</Output>
-      <Time>2013-05-07T15:59:03.8210027-04:00</Time>
+      <Time>2013-05-07T16:03:57.2757293-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\58982D0D\size.fbm\Cap_1Surface_Color.png</Source>
@@ -298,7 +325,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_1Surface_Color_0.xnb</Output>
-      <Time>2013-05-07T15:59:03.8221248-04:00</Time>
+      <Time>2013-05-07T16:03:57.2777254-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\58982D0D\size.fbm\Sweep_NURBSSurface_Color.png</Source>
@@ -314,7 +341,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Sweep_NURBSSurface_Color_0.xnb</Output>
-      <Time>2013-05-07T15:59:03.8192132-04:00</Time>
+      <Time>2013-05-07T16:03:57.2737361-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\58982D0D\size.fbm\CubeSurface_Color.png</Source>
@@ -330,7 +357,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\CubeSurface_Color_0.xnb</Output>
-      <Time>2013-05-07T15:59:03.8171274-04:00</Time>
+      <Time>2013-05-07T16:03:57.2697238-04:00</Time>
     </Item>
     <Item>
       <Source>golf_ball.FBX</Source>
@@ -367,7 +394,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb</Output>
-      <Time>2013-05-07T15:59:05.8173768-04:00</Time>
+      <Time>2013-05-07T16:03:59.4110021-04:00</Time>
     </Item>
     <Item>
       <Source>Cancel.fbx</Source>
@@ -390,7 +417,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_1Surface_Color_1.xnb</Output>
-      <Time>2013-05-07T15:59:06.0345733-04:00</Time>
+      <Time>2013-05-07T16:03:59.6479999-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\B2FA2DB8\Cancel.fbm\Cap_2Surface_Color.png</Source>
@@ -406,7 +433,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_2Surface_Color_0.xnb</Output>
-      <Time>2013-05-07T15:59:06.0354031-04:00</Time>
+      <Time>2013-05-07T16:03:59.6500061-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\B2FA2DB8\Cancel.fbm\Extrude_NURBSSurface_Color.png</Source>
@@ -422,7 +449,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_0.xnb</Output>
-      <Time>2013-05-07T15:59:06.0323483-04:00</Time>
+      <Time>2013-05-07T16:03:59.6459852-04:00</Time>
     </Item>
     <Item>
       <Source>Exit.fbx</Source>
@@ -445,7 +472,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_1Surface_Color_2.xnb</Output>
-      <Time>2013-05-07T15:59:06.4922995-04:00</Time>
+      <Time>2013-05-07T16:04:00.1674692-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\58762D0C\Exit.fbm\Cap_2Surface_Color.png</Source>
@@ -461,7 +488,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_2Surface_Color_1.xnb</Output>
-      <Time>2013-05-07T15:59:06.4935225-04:00</Time>
+      <Time>2013-05-07T16:04:00.1700315-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\58762D0C\Exit.fbm\Extrude_NURBSSurface_Color.png</Source>
@@ -477,7 +504,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_1.xnb</Output>
-      <Time>2013-05-07T15:59:06.4902937-04:00</Time>
+      <Time>2013-05-07T16:04:00.16602-04:00</Time>
     </Item>
     <Item>
       <Source>Reset2.fbx</Source>
@@ -500,7 +527,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_1Surface_Color_3.xnb</Output>
-      <Time>2013-05-07T15:59:06.9305777-04:00</Time>
+      <Time>2013-05-07T16:04:00.6310703-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\B3222DA7\Reset2.fbm\Cap_2Surface_Color.png</Source>
@@ -516,7 +543,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_2Surface_Color_2.xnb</Output>
-      <Time>2013-05-07T15:59:06.9312953-04:00</Time>
+      <Time>2013-05-07T16:04:00.633074-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\B3222DA7\Reset2.fbm\Extrude_NURBSSurface_Color.png</Source>
@@ -532,7 +559,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_2.xnb</Output>
-      <Time>2013-05-07T15:59:06.9285444-04:00</Time>
+      <Time>2013-05-07T16:04:00.6292672-04:00</Time>
     </Item>
     <Item>
       <Source>Rsign.fbx</Source>
@@ -555,7 +582,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Sweep_NURBS.1Surface_Color_0.xnb</Output>
-      <Time>2013-05-07T15:59:07.3434942-04:00</Time>
+      <Time>2013-05-07T16:04:01.1757248-04:00</Time>
     </Item>
     <Item>
       <Source>Save.fbx</Source>
@@ -578,7 +605,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_1Surface_Color_4.xnb</Output>
-      <Time>2013-05-07T15:59:07.6344824-04:00</Time>
+      <Time>2013-05-07T16:04:01.4934279-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\58482D01\Save.fbm\Cap_2Surface_Color.png</Source>
@@ -594,7 +621,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Cap_2Surface_Color_3.xnb</Output>
-      <Time>2013-05-07T15:59:07.6365313-04:00</Time>
+      <Time>2013-05-07T16:04:01.4962188-04:00</Time>
     </Item>
     <Item>
       <Source>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\58482D01\Save.fbm\Extrude_NURBSSurface_Color.png</Source>
@@ -610,7 +637,7 @@
       </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_3.xnb</Output>
-      <Time>2013-05-07T15:59:07.6314176-04:00</Time>
+      <Time>2013-05-07T16:04:01.4915652-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
