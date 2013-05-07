@@ -46,6 +46,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="size.fbx">
+      <Name>size</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
     <Compile Include="UIFont.spritefont">
       <Name>UIFont</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -139,6 +144,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="fire.png">
       <Name>fire</Name>
       <Importer>TextureImporter</Importer>
@@ -159,6 +165,36 @@
       <Name>explosion</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+=======
+    <Compile Include="Cancel.fbx">
+      <Name>Cancel</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Exit.fbx">
+      <Name>Exit</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reset2.fbx">
+      <Name>Reset2</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Rsign.fbx">
+      <Name>Rsign</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Save.fbx">
+      <Name>Save</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+>>>>>>> aef3b677e3489121a6012f0c260484f70ed98e67
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>

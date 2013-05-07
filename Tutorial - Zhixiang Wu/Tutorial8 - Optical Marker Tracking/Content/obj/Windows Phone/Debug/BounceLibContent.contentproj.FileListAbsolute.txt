@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 \\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\obj\Windows Phone\Debug\BounceLibContent.contentprojResolveAssemblyReference.cache
 C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\obj\Windows Phone\Debug\BounceLibContent.contentprojResolveAssemblyReference.cache
+=======
+C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\obj\Windows Phone\Debug\BounceLibContent.contentprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\obj\Windows Phone\Debug\BounceLibContent.contentprojResolveAssemblyReference.cache
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\obj\Windows Phone\Debug\BounceLibContent.contentprojResolveAssemblyReference.cache
+>>>>>>> aef3b677e3489121a6012f0c260484f70ed98e67
