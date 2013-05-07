@@ -33,6 +33,9 @@
 // Uncomment this line if you want to use the pattern-based marker tracking
 //#define USE_PATTERN_MARKER
 
+// Comment this line to use mono mode
+#define STEREO_MODE
+
 using System;
 using System.Collections.Generic;
 using System.Windows.Media;
@@ -66,6 +69,7 @@ using MataliPhysicsObject = Komires.MataliPhysics.PhysicsObject;
 #if WINDOWS_PHONE
 using GoblinXNA.Graphics.ParticleEffects2D;
 #endif
+
 
 namespace BounceLib
 {
@@ -111,6 +115,27 @@ namespace BounceLib
         int countdown = 0;
         int laserNum = 0;
 
+        #region set up stereo viewer
+        // The gap on the center between the left and right screen to prevent the left eye
+        // seeing the right eye view and the right eye seeing the left eye view
+        const int CENTER_GAP = 16; // in pixels
+
+        // The shift amount in pixels from the center of the cropped video image presented to the left eye. 
+        const int LEFT_IMAGE_SHIFT_FROM_CENTER = 20; // 20 pixels to the right from its center
+
+        // The shift amount in pixels of the right eye image relative to the center of the cropped image
+        // presented to the left eye.
+        const int GAP_BETWEEN_LEFT_AND_RIGHT_IMAGE = -40; // 40 pixels to the left
+
+        RenderTarget2D stereoScreenLeft;
+        RenderTarget2D stereoScreenRight;
+        Rectangle leftRect;
+        Rectangle rightRect;
+        Rectangle leftSource;
+        Rectangle rightSource;
+
+        #endregion
+
         public Tutorial8_Phone()
         {
             // no contents
@@ -153,11 +178,16 @@ namespace BounceLib
 
             // Set up the lights used in the scene
             CreateLights();
+      
+            // Set up the stereo camera, which defines the location and viewing frustum of
+            // left and right eyes. This function also handles the mono viewport.
+            SetupStereoCamera();
 
-            CreateCamera();
-
+            // Set up the viewport for rendering stereo view
+            SetupStereoViewport();
+ 
             SetupMarkerTracking(videoBrush);
-
+            
             CreateObjects(content);
 
             State.ShowNotifications = true;
@@ -166,51 +196,111 @@ namespace BounceLib
             State.ShowFPS = true;
         }
 
-        private void CreateCamera()
+
+        private void SetupStereoCamera()
         {
-            // Create a camera 
-            camera = new Camera();
-            // Put the camera at the origin
+            // Create a stereo camera
+            StereoCamera camera = new StereoCamera();
             camera.Translation = new Vector3(0, 0, 0);
-            // Set the vertical field of view to be 60 degrees
-            camera.FieldOfViewY = MathHelper.ToRadians(60);
-            // Set the near clipping plane to be 0.1f unit away from the camera
-            camera.ZNearPlane = 0.1f;
-            // Set the far clipping plane to be 1000 units away from the camera
-            camera.ZFarPlane = 1000;
 
-            // Now assign this camera to a camera node, and add this camera node to our scene graph
+            // Set the interpupillary distance which defines the distance between the left
+            // and right eyes
+#if STEREO_MODE
+            camera.InterpupillaryDistance = 5.5f; // 5.5 cm
+#else
+            camera.InterpupillaryDistance = 20; 
+#endif
+            // Set the focal distance to be at infinity
+            camera.FocalLength = float.MaxValue;
+
             CameraNode cameraNode = new CameraNode(camera);
-            scene.RootNode.AddChild(cameraNode);
 
-            // Assign the camera node to be our scene graph's current camera node
+            scene.RootNode.AddChild(cameraNode);
             scene.CameraNode = cameraNode;
         }
 
-        private void CreateLights()
+        private void SetupStereoViewport()
         {
-            // Create a directional light source
+#if STEREO_MODE
+            // Since we're doing split-screen stereo rendering, the width for each eye's rendered view
+            // will be half of the entire screen
+            int stereoWidth = (State.Width - CENTER_GAP) / 2;
+            int stereoHeight = State.Height;
 
-            LightSource lightSource = new LightSource();
-            //lightSource.Position = new Vector3(-50, 50, 100);
-            lightSource.Type = LightType.Directional;
+            PresentationParameters pp = State.Device.PresentationParameters;
 
-            //lightSource.Attenuation0 = 10f;
-            //lightSource.Attenuation1 = 5f;
-            //lightSource.Attenuation2 = 1f;
-            lightSource.Direction = new Vector3(1, -1, -1);
-            lightSource.Diffuse = Color.White.ToVector4();
-            lightSource.Specular = new Vector4(0.6f, 0.6f, 0.6f, 1);
+            stereoScreenLeft = new RenderTarget2D(State.Device, stereoWidth, stereoHeight, false,
+                SurfaceFormat.Color, pp.DepthStencilFormat);
+            stereoScreenRight = new RenderTarget2D(State.Device, stereoWidth, stereoHeight, false,
+                SurfaceFormat.Color, pp.DepthStencilFormat);
 
-            // Create a light node to hold the light source
-            //LightNode lightNode = new LightNode();
-            lightNode = new LightNode();
-            lightNode.AmbientLightColor = new Vector4(0.2f, 0.2f, 0.2f, 1);
-            lightNode.LightSource = lightSource;
+            leftRect = new Rectangle(0, 0, stereoWidth, stereoHeight);
+            rightRect = new Rectangle(stereoWidth + CENTER_GAP, 0, stereoWidth, stereoHeight);
 
-            scene.RootNode.AddChild(lightNode);
+            scene.BackgroundBound = leftRect;
+#else
+            // The phone's width is 800, but since we're rendering the video image with aspect ratio of 4x3 
+            // on the background, so we'll hard-code the width to be 640
+            int stereoWidth = 640; 
+            int stereoHeight = State.Height;
+
+            PresentationParameters pp = State.Device.PresentationParameters;
+
+            stereoScreenLeft = new RenderTarget2D(State.Device, stereoWidth, stereoHeight, false,
+                SurfaceFormat.Color, pp.DepthStencilFormat);
+            stereoScreenRight = new RenderTarget2D(State.Device, stereoWidth, stereoHeight, false,
+                SurfaceFormat.Color, pp.DepthStencilFormat);
+
+            int screenWidth = 800;
+
+            leftRect = new Rectangle(0, 0, (screenWidth - CENTER_GAP) / 2, stereoHeight);
+            rightRect = new Rectangle(leftRect.Width + CENTER_GAP, 0, leftRect.Width, stereoHeight);
+
+            int sourceWidth = (screenWidth - CENTER_GAP) / 2;
+
+            // We will render half (a little less than half to be exact due to CENTER_GAP) of the 
+            // entire video image for both the left and right eyes, so we need to set the crop
+            // area
+            leftSource = new Rectangle((screenWidth - sourceWidth) / 2 + LEFT_IMAGE_SHIFT_FROM_CENTER, 0, sourceWidth, State.Height);
+            rightSource = new Rectangle(leftSource.X + GAP_BETWEEN_LEFT_AND_RIGHT_IMAGE, 0, sourceWidth, State.Height);
+#endif
         }
 
+#if STEREO_MODE
+        private void SetupMarkerTracking(VideoBrush videoBrush)
+        {
+            PhoneCameraCapture captureDevice = new PhoneCameraCapture(videoBrush);
+            captureDevice.InitVideoCapture(0, FrameRate._30Hz, Resolution._640x480,
+                ImageFormat.B8G8R8A8_32, false);
+            ((PhoneCameraCapture)captureDevice).UseLuminance = true;
+
+            if (betterFPS)
+                captureDevice.MarkerTrackingImageResizer = new HalfResizer();
+
+            scene.AddVideoCaptureDevice(captureDevice);
+
+            // Use NyARToolkit ID marker tracker
+            NyARToolkitIdTracker tracker = new NyARToolkitIdTracker();
+
+            if (captureDevice.MarkerTrackingImageResizer != null)
+                tracker.InitTracker((int)(captureDevice.Width * captureDevice.MarkerTrackingImageResizer.ScalingFactor),
+                    (int)(captureDevice.Height * captureDevice.MarkerTrackingImageResizer.ScalingFactor),
+                    "camera_para.dat");
+            else
+                tracker.InitTracker(captureDevice.Width, captureDevice.Height, "camera_para.dat");
+
+            // Set the marker tracker to use for our scene
+            scene.MarkerTracker = tracker;
+
+            ((StereoCamera)scene.CameraNode.Camera).RightProjection = tracker.CameraProjection;
+
+            // Create a marker node to track a ground marker array.
+            groundMarkerNode = new MarkerNode(scene.MarkerTracker, "NyARIdGroundArray.xml", 
+                NyARToolkitTracker.ComputationMethod.Average);
+            scene.RootNode.AddChild(groundMarkerNode);
+        }
+#else
+        
         private void SetupMarkerTracking(VideoBrush videoBrush)
         {
             IVideoCapture captureDevice = null;
@@ -259,6 +349,53 @@ namespace BounceLib
             scene.MarkerTracker = tracker;
 
 
+        }
+#endif
+
+
+        private void CreateCamera()
+        {
+            // Create a camera 
+            camera = new Camera();
+            // Put the camera at the origin
+            camera.Translation = new Vector3(0, 0, 0);
+            // Set the vertical field of view to be 60 degrees
+            camera.FieldOfViewY = MathHelper.ToRadians(60);
+            // Set the near clipping plane to be 0.1f unit away from the camera
+            camera.ZNearPlane = 0.1f;
+            // Set the far clipping plane to be 1000 units away from the camera
+            camera.ZFarPlane = 1000;
+
+            // Now assign this camera to a camera node, and add this camera node to our scene graph
+            CameraNode cameraNode = new CameraNode(camera);
+            scene.RootNode.AddChild(cameraNode);
+
+            // Assign the camera node to be our scene graph's current camera node
+            scene.CameraNode = cameraNode;
+        }
+
+        private void CreateLights()
+        {
+            // Create a directional light source
+
+            LightSource lightSource = new LightSource();
+            //lightSource.Position = new Vector3(-50, 50, 100);
+            lightSource.Type = LightType.Directional;
+
+            //lightSource.Attenuation0 = 10f;
+            //lightSource.Attenuation1 = 5f;
+            //lightSource.Attenuation2 = 1f;
+            lightSource.Direction = new Vector3(1, -1, -1);
+            lightSource.Diffuse = Color.White.ToVector4();
+            lightSource.Specular = new Vector4(0.6f, 0.6f, 0.6f, 1);
+
+            // Create a light node to hold the light source
+            //LightNode lightNode = new LightNode();
+            lightNode = new LightNode();
+            lightNode.AmbientLightColor = new Vector4(0.2f, 0.2f, 0.2f, 1);
+            lightNode.LightSource = lightSource;
+
+            scene.RootNode.AddChild(lightNode);
         }
 
         private void CreateObjects(ContentManager content)
@@ -624,7 +761,27 @@ namespace BounceLib
 
         public void Draw(TimeSpan elapsedTime)
         {
+        #if !STEREO_MODE
             State.Device.Viewport = viewport;
+        #endif
+             // Set the render target to be the left screen render target
+            scene.SceneRenderTarget = stereoScreenLeft;
+            // Render the scene viewed from the left eye to the left screen render target
+            scene.Draw(elapsedTime, false);
+
+            // Set the render target to be the right screen render target
+            scene.SceneRenderTarget = stereoScreenRight;
+            // Render the scene viewed from the right eye to the right screen render target
+            // NOTE: We use the light version of Draw function here for better performance
+            scene.RenderScene(false, false);
+
+            // Set the render target to be the default one (frame buffer)
+            State.Device.SetRenderTarget(null);
+            State.Device.Clear(scene.BackgroundColor);
+            // Render the left and right render targets as textures
+            State.SharedSpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Opaque);
+
+
 
             UI2DRenderer.WriteText(new Vector2(10, 10), label, Color.GreenYellow, sampleFont);
             UI2DRenderer.WriteText(new Vector2(10, 30), ballTransNode.Translation.ToString(), Color.GreenYellow, sampleFont);
@@ -777,9 +934,16 @@ namespace BounceLib
             }
             #endregion
 
+#if STEREO_MODE
+            State.SharedSpriteBatch.Draw(stereoScreenLeft, leftRect, Color.White);
+            State.SharedSpriteBatch.Draw(stereoScreenRight, rightRect, Color.White);
+#else
+            State.SharedSpriteBatch.Draw(stereoScreenLeft, leftRect, leftSource, Color.White);
+            State.SharedSpriteBatch.Draw(stereoScreenRight, rightRect, rightSource, Color.White);
+#endif
             label = countdown.ToString();
 
-            scene.Draw(elapsedTime, false);
+            State.SharedSpriteBatch.End();
         }
 
         private void CreateTags(ContentManager content)
