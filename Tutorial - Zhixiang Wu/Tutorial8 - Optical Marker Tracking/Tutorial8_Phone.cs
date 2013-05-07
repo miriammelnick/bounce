@@ -442,7 +442,7 @@ namespace BounceLib
                 Notifier.AddMessage("Selected the level1 panels!");
 
                 //record initial position
-                initialSelectedPosition = levelNode.WorldTransformation.Translation;
+                initialSelectedPosition = poleNode.WorldTransformation.Translation;
                 selectedObj = "level1";
             }
         }
@@ -585,7 +585,7 @@ namespace BounceLib
                 switch (selectedObj)
                 {
                     case "level1":
-                        Vector3 cueVector = polemat.Translation - initialSelectedPosition;
+                        Vector3 cueVector = poleNode.WorldTransformation.Translation - initialSelectedPosition;
                         Vector3 abs_cueVector = new Vector3(Math.Abs(cueVector.X), Math.Abs(cueVector.Y), Math.Abs(cueVector.Z));
                         float scaledLength = abs_cueVector.Length();
                         float direction = 1;
@@ -595,27 +595,28 @@ namespace BounceLib
                             {
                                 if (cueVector.X < 0)
                                     direction = -1;
-                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationY(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelTransNode.WorldTransformation);
+                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationY(direction * MathHelper.ToRadians(1)) * Matrix.Invert(levelTransNode.WorldTransformation);
                                 levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
                             }
                             else if (abs_cueVector.Y > abs_cueVector.X && abs_cueVector.Y > abs_cueVector.Z)
                             {
                                 if (cueVector.Y > 0)
                                     direction = -1;
-                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationX(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelTransNode.WorldTransformation);
+                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationX(direction * MathHelper.ToRadians(1)) * Matrix.Invert(levelTransNode.WorldTransformation);
                                 levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
                             }
                             else if (abs_cueVector.Z > abs_cueVector.X && abs_cueVector.Z > abs_cueVector.Y)
                             {
                                 if (cueVector.Z > 0)
                                     direction = -1;
-                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationZ(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelTransNode.WorldTransformation);
+                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationZ(direction * MathHelper.ToRadians(1)) * Matrix.Invert(levelTransNode.WorldTransformation);
                                 levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
                             }
                         }
                         else if (transMode == "SCALING" && scaledLength > 100)
                         {
-                            float scale = (float)Math.Pow(abs_cueVector.Length() / 100, 2);
+                            float scale = (float)Math.Pow(abs_cueVector.Length() / 300, 2);
+                            Notifier.AddMessage(scale.ToString());
                             levelTransNode.Scale = new Vector3(scale, scale, scale);
                         }
                         break;

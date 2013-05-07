@@ -7,6 +7,9 @@ Content\camera.xnb
 Content\transfer.xnb
 Content\reset.xnb
 Content\hikingsticktexture.xnb
+Content\fire.xnb
+Content\smoke.xnb
+Content\explosion.xnb
 Content\UIFont.xnb
 Content\Sample.xnb
 Content\DebugFont.xnb
@@ -24,6 +27,9 @@ Content\Sample.spritefont
 Content\DebugFont.spritefont
 Content\hikingstick3.fbx
 Content\bouncelevel1panels.fbx
+Content\smoke.png
+Content\explosion.png
+Content\fire.png
 NyARIdGroundArray.xml
 NyARToolkitGroundArray.xml
 NyARToolkitIDBounceMenu1.xml
