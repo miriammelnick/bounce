@@ -364,89 +364,6 @@ C:\Users\Miriam Melnick\Dropbox\_Spring 2013\3D UI\final 3d ui project\Tutorial 
 C:\Users\Miriam Melnick\Dropbox\_Spring 2013\3D UI\final 3d ui project\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.dll
 C:\Users\Miriam Melnick\Dropbox\_Spring 2013\3D UI\final 3d ui project\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.pdb
 C:\Users\Miriam Melnick\Dropbox\_Spring 2013\3D UI\final 3d ui project\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\XapCacheFile.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.png
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.jpg
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.spritefont
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\camera.png
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\transfer.png
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.jpg
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.spritefont
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.spritefont
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.fbx
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.fbx
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARIdGroundArray.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitGroundArray.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDGroundArray.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar3.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar4.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar5.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\camera_para.dat
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker0.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker1.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker10.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker11.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker12.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker13.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker14.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker15.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker16.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker17.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker18.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker19.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker2.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker20.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker21.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker22.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker23.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker24.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker25.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker26.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker27.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker28.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker29.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker3.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker30.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker4.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker5.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker6.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker7.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker8.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker9.patt
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\patt.hiro
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\MarkerImageHiro.jpg
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\ApplicationIcon.png
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Background.png
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotate.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\S.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\t.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\camera.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\transfer.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingsticktexture.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\golf_ball.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Tutorial8 - Optical Marker Tracking - Silverlight.dll
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Tutorial8 - Optical Marker Tracking - Silverlight.pdb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\AppManifest.xaml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Tutorial8___Optical_Marker_Tracking___Phone.xap
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.csprojResolveAssemblyReference.cache
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\App.g.cs
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\GamePage.g.cs
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.g.resources
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.dll
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.pdb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\XapCacheFile.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu1.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu2.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu3.xml
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu4.xml
 C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.csprojResolveAssemblyReference.cache
 C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\App.g.cs
 C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\GamePage.g.cs
@@ -536,32 +453,115 @@ C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - 
 \\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\AppManifest.xaml
 \\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Tutorial8___Optical_Marker_Tracking___Phone.xap
 \\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\XapCacheFile.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotate.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\S.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\t.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\camera.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\transfer.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingsticktexture.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\size.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\golf_ball.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cancel.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Exit.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Reset2.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Rsign.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Save.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube_2Surface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CylinderSurface_Color_0.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBSSurface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_1.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_0.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_0.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_1.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_2.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_1.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_1.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_2.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_3.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_2.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_2.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBS.1Surface_Color_0.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_3.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_4.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_3.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_3.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.png
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.jpg
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.spritefont
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\camera.png
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\transfer.png
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.jpg
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.spritefont
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.spritefont
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.fbx
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.fbx
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cancel.fbx
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Exit.fbx
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Reset2.fbx
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Rsign.fbx
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Save.fbx
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\size.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube_2Surface_Color_0.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CylinderSurface_Color_0.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_4.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBSSurface_Color_0.xnb
-C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARIdGroundArray.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitGroundArray.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu1.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu2.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu3.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu4.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDGroundArray.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar3.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar4.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar5.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\camera_para.dat
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker0.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker1.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker10.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker11.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker12.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker13.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker14.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker15.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker16.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker17.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker18.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker19.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker2.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker20.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker21.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker22.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker23.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker24.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker25.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker26.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker27.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker28.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker29.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker3.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker30.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker4.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker5.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker6.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker7.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker8.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker9.patt
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\patt.hiro
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\MarkerImageHiro.jpg
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\ApplicationIcon.png
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Background.png
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Tutorial8 - Optical Marker Tracking - Silverlight.dll
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Tutorial8 - Optical Marker Tracking - Silverlight.pdb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\AppManifest.xaml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Tutorial8___Optical_Marker_Tracking___Phone.xap
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.csprojResolveAssemblyReference.cache
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\App.g.cs
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\GamePage.g.cs
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.g.resources
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.dll
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.pdb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\XapCacheFile.xml

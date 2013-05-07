@@ -85,7 +85,6 @@ namespace BounceLib
         bool betterFPS = true; // has trade-off of worse tracking if set to true
         TransformNode cancelTransNode, resetTransNode, scaleTransNode, exitTransNode, rotateTransNode;
 
-
         LightNode lightNode;
         Viewport viewport;
 
@@ -106,7 +105,7 @@ namespace BounceLib
         TransformNode laserGroup;
 
         /* Scaling and Rotation Variables */
-        string transMode = "ROTATION"; //designates transformation mode, takes on values of "ROTATION" and "SCALING"
+        string transMode = "ROTATION"; //designates transformation mode, takes on values of "ROTATION" and "SCALING" (and "" for neither)
         string selectedObj = ""; //designates selected object by name
         Vector3 initialSelectedPosition = new Vector3(-1, -1, -1); //stores initial position of selected object
 
@@ -178,12 +177,14 @@ namespace BounceLib
 
             // Set up the lights used in the scene
             CreateLights();
-      
+#if STEREO_MODE    
             // Set up the stereo camera, which defines the location and viewing frustum of
-            // left and right eyes. This function also handles the mono viewport.
+            // left and right eyes. 
             SetupStereoCamera();
-
-            // Set up the viewport for rendering stereo view
+#else
+            CreateCamera();
+#endif
+            // Set up the viewport for rendering stereo view. This function also handles the mono viewport.
             SetupStereoViewport();
  
             SetupMarkerTracking(videoBrush);
@@ -239,30 +240,30 @@ namespace BounceLib
 
             scene.BackgroundBound = leftRect;
 #else
-            // The phone's width is 800, but since we're rendering the video image with aspect ratio of 4x3 
-            // on the background, so we'll hard-code the width to be 640
-            int stereoWidth = 640; 
-            int stereoHeight = State.Height;
+            //// The phone's width is 800, but since we're rendering the video image with aspect ratio of 4x3 
+            //// on the background, so we'll hard-code the width to be 640
+            //int stereoWidth = 640; 
+            //int stereoHeight = State.Height;
 
-            PresentationParameters pp = State.Device.PresentationParameters;
+            //PresentationParameters pp = State.Device.PresentationParameters;
 
-            stereoScreenLeft = new RenderTarget2D(State.Device, stereoWidth, stereoHeight, false,
-                SurfaceFormat.Color, pp.DepthStencilFormat);
-            stereoScreenRight = new RenderTarget2D(State.Device, stereoWidth, stereoHeight, false,
-                SurfaceFormat.Color, pp.DepthStencilFormat);
+            //stereoScreenLeft = new RenderTarget2D(State.Device, stereoWidth, stereoHeight, false,
+            //    SurfaceFormat.Color, pp.DepthStencilFormat);
+            //stereoScreenRight = new RenderTarget2D(State.Device, stereoWidth, stereoHeight, false,
+            //    SurfaceFormat.Color, pp.DepthStencilFormat);
 
-            int screenWidth = 800;
+            //int screenWidth = 800;
 
-            leftRect = new Rectangle(0, 0, (screenWidth - CENTER_GAP) / 2, stereoHeight);
-            rightRect = new Rectangle(leftRect.Width + CENTER_GAP, 0, leftRect.Width, stereoHeight);
+            //leftRect = new Rectangle(0, 0, (screenWidth - CENTER_GAP) / 2, stereoHeight);
+            //rightRect = new Rectangle(leftRect.Width + CENTER_GAP, 0, leftRect.Width, stereoHeight);
 
-            int sourceWidth = (screenWidth - CENTER_GAP) / 2;
+            //int sourceWidth = (screenWidth - CENTER_GAP) / 2;
 
-            // We will render half (a little less than half to be exact due to CENTER_GAP) of the 
-            // entire video image for both the left and right eyes, so we need to set the crop
-            // area
-            leftSource = new Rectangle((screenWidth - sourceWidth) / 2 + LEFT_IMAGE_SHIFT_FROM_CENTER, 0, sourceWidth, State.Height);
-            rightSource = new Rectangle(leftSource.X + GAP_BETWEEN_LEFT_AND_RIGHT_IMAGE, 0, sourceWidth, State.Height);
+            //// We will render half (a little less than half to be exact due to CENTER_GAP) of the 
+            //// entire video image for both the left and right eyes, so we need to set the crop
+            //// area
+            //leftSource = new Rectangle((screenWidth - sourceWidth) / 2 + LEFT_IMAGE_SHIFT_FROM_CENTER, 0, sourceWidth, State.Height);
+            //rightSource = new Rectangle(leftSource.X + GAP_BETWEEN_LEFT_AND_RIGHT_IMAGE, 0, sourceWidth, State.Height);
 #endif
         }
 
@@ -761,10 +762,8 @@ namespace BounceLib
 
         public void Draw(TimeSpan elapsedTime)
         {
-        #if !STEREO_MODE
-            State.Device.Viewport = viewport;
-        #endif
-             // Set the render target to be the left screen render target
+        #if STEREO_MODE
+            // Set the render target to be the left screen render target
             scene.SceneRenderTarget = stereoScreenLeft;
             // Render the scene viewed from the left eye to the left screen render target
             scene.Draw(elapsedTime, false);
@@ -777,7 +776,15 @@ namespace BounceLib
 
             // Set the render target to be the default one (frame buffer)
             State.Device.SetRenderTarget(null);
+            
             State.Device.Clear(scene.BackgroundColor);
+
+        #else
+            State.Device.Viewport = viewport;
+        #endif
+
+            
+
             // Render the left and right render targets as textures
             State.SharedSpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Opaque);
 
@@ -933,17 +940,20 @@ namespace BounceLib
 
             }
             #endregion
+            label = countdown.ToString();
 
 #if STEREO_MODE
             State.SharedSpriteBatch.Draw(stereoScreenLeft, leftRect, Color.White);
             State.SharedSpriteBatch.Draw(stereoScreenRight, rightRect, Color.White);
-#else
-            State.SharedSpriteBatch.Draw(stereoScreenLeft, leftRect, leftSource, Color.White);
-            State.SharedSpriteBatch.Draw(stereoScreenRight, rightRect, rightSource, Color.White);
-#endif
-            label = countdown.ToString();
-
             State.SharedSpriteBatch.End();
+
+#else
+            //State.SharedSpriteBatch.Draw(stereoScreenLeft, leftRect, leftSource, Color.White);
+            //State.SharedSpriteBatch.Draw(stereoScreenRight, rightRect, rightSource, Color.White);
+            State.SharedSpriteBatch.End();
+            scene.Draw(elapsedTime, false);
+#endif
+
         }
 
         private void CreateTags(ContentManager content)
