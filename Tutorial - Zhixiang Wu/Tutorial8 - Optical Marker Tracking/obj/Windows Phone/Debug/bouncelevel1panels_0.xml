@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Cube2</Name>
     <Identity>
-      <SourceFilename>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\bouncelevel1panels.fbx</SourceFilename>
+      <SourceFilename>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\bouncelevel1panels.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -26,7 +26,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>Cube2</Name>
       <Identity>
-        <SourceFilename>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\bouncelevel1panels.fbx</SourceFilename>
+        <SourceFilename>C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\bouncelevel1panels.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -46,6 +46,6 @@
     </Resource>
   </Resources>
   <ExternalReferences>
-    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">FBX\7FF12F9E\bouncelevel1panels.fbm\Cube2.1Surface_Color.png</ExternalReference>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">FBX\FA90329A\bouncelevel1panels.fbm\Cube2.1Surface_Color.png</ExternalReference>
   </ExternalReferences>
 </XnaContent>

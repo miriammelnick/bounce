@@ -1,91 +1,120 @@
-﻿<xapCache source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\..\..\bin\Windows Phone\Tutorial8___Optical_Marker_Tracking___Phone.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="5/7/2013 12:15:11 PM">
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\..\..\bin\Windows Phone\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\Background.png.png" archivePath="Background.png.png" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\Background.png.png" archivePath="Background.png.png" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.dll" archivePath="Tutorial8 - Optical Marker Tracking - Silverlight.dll" lastWriteTime="5/7/2013 12:15:08 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\BounceLib.dll" archivePath="BounceLib.dll" lastWriteTime="5/7/2013 12:15:08 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\GoblinXNA.dll" archivePath="GoblinXNA.dll" lastWriteTime="3/13/2013 1:46:28 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\MataliPhysics.dll" archivePath="MataliPhysics.dll" lastWriteTime="3/6/2013 11:59:34 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\NyARToolkitCS.dll" archivePath="NyARToolkitCS.dll" lastWriteTime="3/6/2013 11:59:34 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\NyARToolkit4.dll" archivePath="NyARToolkit4.dll" lastWriteTime="3/6/2013 11:59:34 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Nuclex.Fonts.dll" archivePath="Nuclex.Fonts.dll" lastWriteTime="3/6/2013 11:59:34 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\NyARToolkit4.markersystem.dll" archivePath="NyARToolkit4.markersystem.dll" lastWriteTime="3/6/2013 11:59:34 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\Background.png" archivePath="Background.png" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\BounceIcon.png" archivePath="BounceIcon.png" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\GameThumbnail.png" archivePath="GameThumbnail.png" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.xnb" archivePath="Content\Object.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.xnb" archivePath="Content\rotation.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotate.xnb" archivePath="Content\rotate.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\S.xnb" archivePath="Content\S.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\t.xnb" archivePath="Content\t.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\camera.xnb" archivePath="Content\camera.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\transfer.xnb" archivePath="Content\transfer.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.xnb" archivePath="Content\reset.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingsticktexture.xnb" archivePath="Content\hikingsticktexture.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.xnb" archivePath="Content\UIFont.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.xnb" archivePath="Content\Sample.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.xnb" archivePath="Content\DebugFont.xnb" lastWriteTime="5/7/2013 10:15:03 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\golf_ball.xnb" archivePath="Content\golf_ball.xnb" lastWriteTime="5/7/2013 10:15:05 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.xnb" archivePath="Content\hikingstick3.xnb" lastWriteTime="5/7/2013 10:15:05 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.xnb" archivePath="Content\bouncelevel1panels.xnb" lastWriteTime="5/7/2013 10:15:05 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb" archivePath="Content\Cube2.1Surface_Color_0.xnb" lastWriteTime="5/7/2013 10:15:51 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.png" archivePath="Content\Object.png" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.jpg" archivePath="Content\rotation.jpg" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.spritefont" archivePath="Content\UIFont.spritefont" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\camera.png" archivePath="Content\camera.png" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\transfer.png" archivePath="Content\transfer.png" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.jpg" archivePath="Content\reset.jpg" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.spritefont" archivePath="Content\Sample.spritefont" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.spritefont" archivePath="Content\DebugFont.spritefont" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.fbx" archivePath="Content\hikingstick3.fbx" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.fbx" archivePath="Content\bouncelevel1panels.fbx" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARIdGroundArray.xml" archivePath="NyARIdGroundArray.xml" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitGroundArray.xml" archivePath="NyARToolkitGroundArray.xml" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu1.xml" archivePath="NyARToolkitIDBounceMenu1.xml" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu2.xml" archivePath="NyARToolkitIDBounceMenu2.xml" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu3.xml" archivePath="NyARToolkitIDBounceMenu3.xml" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu4.xml" archivePath="NyARToolkitIDBounceMenu4.xml" lastWriteTime="5/7/2013 7:49:17 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDGroundArray.xml" archivePath="NyARToolkitIDGroundArray.xml" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar3.xml" archivePath="NyARToolkitIDToolbar3.xml" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar4.xml" archivePath="NyARToolkitIDToolbar4.xml" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar5.xml" archivePath="NyARToolkitIDToolbar5.xml" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\camera_para.dat" archivePath="camera_para.dat" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker0.patt" archivePath="marker0.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker1.patt" archivePath="marker1.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker10.patt" archivePath="marker10.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker11.patt" archivePath="marker11.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker12.patt" archivePath="marker12.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker13.patt" archivePath="marker13.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker14.patt" archivePath="marker14.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker15.patt" archivePath="marker15.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker16.patt" archivePath="marker16.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker17.patt" archivePath="marker17.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker18.patt" archivePath="marker18.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker19.patt" archivePath="marker19.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker2.patt" archivePath="marker2.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker20.patt" archivePath="marker20.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker21.patt" archivePath="marker21.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker22.patt" archivePath="marker22.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker23.patt" archivePath="marker23.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker24.patt" archivePath="marker24.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker25.patt" archivePath="marker25.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker26.patt" archivePath="marker26.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker27.patt" archivePath="marker27.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker28.patt" archivePath="marker28.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker29.patt" archivePath="marker29.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker3.patt" archivePath="marker3.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker30.patt" archivePath="marker30.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker4.patt" archivePath="marker4.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker5.patt" archivePath="marker5.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker6.patt" archivePath="marker6.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker7.patt" archivePath="marker7.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker8.patt" archivePath="marker8.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker9.patt" archivePath="marker9.patt" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\patt.hiro" archivePath="patt.hiro" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\MarkerImageHiro.jpg" archivePath="MarkerImageHiro.jpg" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="5/7/2013 7:49:18 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Background.png" archivePath="Background.png" lastWriteTime="5/7/2013 7:49:18 AM" />
+﻿<xapCache source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\..\..\bin\Windows Phone\Tutorial8___Optical_Marker_Tracking___Phone.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="5/7/2013 2:17:20 PM">
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\..\..\bin\Windows Phone\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="5/6/2013 3:27:05 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\Background.png.png" archivePath="Background.png.png" lastWriteTime="5/6/2013 3:24:59 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\Background.png.png" archivePath="Background.png.png" lastWriteTime="5/6/2013 3:24:59 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.dll" archivePath="Tutorial8 - Optical Marker Tracking - Silverlight.dll" lastWriteTime="5/7/2013 2:17:18 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\BounceLib.dll" archivePath="BounceLib.dll" lastWriteTime="5/7/2013 2:17:16 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\GoblinXNA.dll" archivePath="GoblinXNA.dll" lastWriteTime="3/13/2013 1:46:28 AM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\MataliPhysics.dll" archivePath="MataliPhysics.dll" lastWriteTime="3/6/2013 11:59:34 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\NyARToolkitCS.dll" archivePath="NyARToolkitCS.dll" lastWriteTime="3/6/2013 11:59:34 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\NyARToolkit4.dll" archivePath="NyARToolkit4.dll" lastWriteTime="3/6/2013 11:59:34 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\Nuclex.Fonts.dll" archivePath="Nuclex.Fonts.dll" lastWriteTime="3/6/2013 11:59:34 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\bin\Windows Phone\NyARToolkit4.markersystem.dll" archivePath="NyARToolkit4.markersystem.dll" lastWriteTime="3/6/2013 11:59:34 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="5/6/2013 3:17:29 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\Background.png" archivePath="Background.png" lastWriteTime="5/6/2013 2:14:14 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\BounceIcon.png" archivePath="BounceIcon.png" lastWriteTime="5/6/2013 2:36:12 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\GameThumbnail.png" archivePath="GameThumbnail.png" lastWriteTime="5/6/2013 2:14:14 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="5/6/2013 2:14:14 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="5/6/2013 3:20:48 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.xnb" archivePath="Content\Object.xnb" lastWriteTime="5/7/2013 1:43:16 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.xnb" archivePath="Content\rotation.xnb" lastWriteTime="5/7/2013 1:43:16 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotate.xnb" archivePath="Content\rotate.xnb" lastWriteTime="5/7/2013 1:43:16 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\S.xnb" archivePath="Content\S.xnb" lastWriteTime="5/7/2013 1:43:16 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\t.xnb" archivePath="Content\t.xnb" lastWriteTime="5/7/2013 1:43:16 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\camera.xnb" archivePath="Content\camera.xnb" lastWriteTime="5/7/2013 1:43:16 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\transfer.xnb" archivePath="Content\transfer.xnb" lastWriteTime="5/7/2013 1:43:17 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.xnb" archivePath="Content\reset.xnb" lastWriteTime="5/7/2013 1:58:35 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingsticktexture.xnb" archivePath="Content\hikingsticktexture.xnb" lastWriteTime="5/7/2013 1:43:17 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.xnb" archivePath="Content\UIFont.xnb" lastWriteTime="5/7/2013 1:43:17 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.xnb" archivePath="Content\Sample.xnb" lastWriteTime="5/7/2013 1:43:17 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.xnb" archivePath="Content\DebugFont.xnb" lastWriteTime="5/7/2013 1:43:17 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\golf_ball.xnb" archivePath="Content\golf_ball.xnb" lastWriteTime="5/7/2013 1:43:19 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.xnb" archivePath="Content\hikingstick3.xnb" lastWriteTime="5/7/2013 1:43:19 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.xnb" archivePath="Content\bouncelevel1panels.xnb" lastWriteTime="5/7/2013 1:43:20 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb" archivePath="Content\Cube2.1Surface_Color_0.xnb" lastWriteTime="5/7/2013 1:43:20 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cancel.xnb" archivePath="Content\Cancel.xnb" lastWriteTime="5/7/2013 1:58:35 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Exit.xnb" archivePath="Content\Exit.xnb" lastWriteTime="5/7/2013 1:58:35 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Reset2.xnb" archivePath="Content\Reset2.xnb" lastWriteTime="5/7/2013 1:58:36 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Rsign.xnb" archivePath="Content\Rsign.xnb" lastWriteTime="5/7/2013 1:58:37 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Save.xnb" archivePath="Content\Save.xnb" lastWriteTime="5/7/2013 1:58:37 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_0.xnb" archivePath="Content\Cap_1Surface_Color_0.xnb" lastWriteTime="5/7/2013 1:58:35 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_0.xnb" archivePath="Content\Cap_2Surface_Color_0.xnb" lastWriteTime="5/7/2013 1:58:35 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_0.xnb" archivePath="Content\Extrude_NURBSSurface_Color_0.xnb" lastWriteTime="5/7/2013 1:58:35 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_1.xnb" archivePath="Content\Cap_1Surface_Color_1.xnb" lastWriteTime="5/7/2013 1:58:36 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_1.xnb" archivePath="Content\Cap_2Surface_Color_1.xnb" lastWriteTime="5/7/2013 1:58:36 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_1.xnb" archivePath="Content\Extrude_NURBSSurface_Color_1.xnb" lastWriteTime="5/7/2013 1:58:36 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_2.xnb" archivePath="Content\Cap_1Surface_Color_2.xnb" lastWriteTime="5/7/2013 1:58:36 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_2.xnb" archivePath="Content\Cap_2Surface_Color_2.xnb" lastWriteTime="5/7/2013 1:58:36 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_2.xnb" archivePath="Content\Extrude_NURBSSurface_Color_2.xnb" lastWriteTime="5/7/2013 1:58:36 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBS.1Surface_Color_0.xnb" archivePath="Content\Sweep_NURBS.1Surface_Color_0.xnb" lastWriteTime="5/7/2013 1:58:37 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_3.xnb" archivePath="Content\Cap_1Surface_Color_3.xnb" lastWriteTime="5/7/2013 1:58:37 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_3.xnb" archivePath="Content\Cap_2Surface_Color_3.xnb" lastWriteTime="5/7/2013 1:58:37 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_3.xnb" archivePath="Content\Extrude_NURBSSurface_Color_3.xnb" lastWriteTime="5/7/2013 1:58:37 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\size.xnb" archivePath="Content\size.xnb" lastWriteTime="5/7/2013 2:07:33 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube_2Surface_Color_0.xnb" archivePath="Content\Cube_2Surface_Color_0.xnb" lastWriteTime="5/7/2013 2:07:33 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CylinderSurface_Color_0.xnb" archivePath="Content\CylinderSurface_Color_0.xnb" lastWriteTime="5/7/2013 2:07:33 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_4.xnb" archivePath="Content\Cap_1Surface_Color_4.xnb" lastWriteTime="5/7/2013 2:07:34 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBSSurface_Color_0.xnb" archivePath="Content\Sweep_NURBSSurface_Color_0.xnb" lastWriteTime="5/7/2013 2:07:34 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_0.xnb" archivePath="Content\CubeSurface_Color_0.xnb" lastWriteTime="5/7/2013 2:07:34 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.png" archivePath="Content\Object.png" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.jpg" archivePath="Content\rotation.jpg" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.spritefont" archivePath="Content\UIFont.spritefont" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\camera.png" archivePath="Content\camera.png" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\transfer.png" archivePath="Content\transfer.png" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.jpg" archivePath="Content\reset.jpg" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.spritefont" archivePath="Content\Sample.spritefont" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.spritefont" archivePath="Content\DebugFont.spritefont" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.fbx" archivePath="Content\hikingstick3.fbx" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.fbx" archivePath="Content\bouncelevel1panels.fbx" lastWriteTime="5/6/2013 7:24:47 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cancel.fbx" archivePath="Content\Cancel.fbx" lastWriteTime="5/7/2013 1:53:57 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Exit.fbx" archivePath="Content\Exit.fbx" lastWriteTime="5/7/2013 1:53:57 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Reset2.fbx" archivePath="Content\Reset2.fbx" lastWriteTime="5/7/2013 1:53:57 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Rsign.fbx" archivePath="Content\Rsign.fbx" lastWriteTime="5/7/2013 1:53:57 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Save.fbx" archivePath="Content\Save.fbx" lastWriteTime="5/7/2013 1:53:57 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARIdGroundArray.xml" archivePath="NyARIdGroundArray.xml" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitGroundArray.xml" archivePath="NyARToolkitGroundArray.xml" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu1.xml" archivePath="NyARToolkitIDBounceMenu1.xml" lastWriteTime="5/6/2013 1:04:35 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu2.xml" archivePath="NyARToolkitIDBounceMenu2.xml" lastWriteTime="5/6/2013 1:08:34 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu3.xml" archivePath="NyARToolkitIDBounceMenu3.xml" lastWriteTime="5/6/2013 1:09:12 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu4.xml" archivePath="NyARToolkitIDBounceMenu4.xml" lastWriteTime="5/6/2013 1:09:48 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDGroundArray.xml" archivePath="NyARToolkitIDGroundArray.xml" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar3.xml" archivePath="NyARToolkitIDToolbar3.xml" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar4.xml" archivePath="NyARToolkitIDToolbar4.xml" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar5.xml" archivePath="NyARToolkitIDToolbar5.xml" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\camera_para.dat" archivePath="camera_para.dat" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker0.patt" archivePath="marker0.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker1.patt" archivePath="marker1.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker10.patt" archivePath="marker10.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker11.patt" archivePath="marker11.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker12.patt" archivePath="marker12.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker13.patt" archivePath="marker13.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker14.patt" archivePath="marker14.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker15.patt" archivePath="marker15.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker16.patt" archivePath="marker16.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker17.patt" archivePath="marker17.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker18.patt" archivePath="marker18.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker19.patt" archivePath="marker19.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker2.patt" archivePath="marker2.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker20.patt" archivePath="marker20.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker21.patt" archivePath="marker21.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker22.patt" archivePath="marker22.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker23.patt" archivePath="marker23.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker24.patt" archivePath="marker24.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker25.patt" archivePath="marker25.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker26.patt" archivePath="marker26.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker27.patt" archivePath="marker27.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker28.patt" archivePath="marker28.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker29.patt" archivePath="marker29.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker3.patt" archivePath="marker3.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker30.patt" archivePath="marker30.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker4.patt" archivePath="marker4.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker5.patt" archivePath="marker5.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker6.patt" archivePath="marker6.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker7.patt" archivePath="marker7.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker8.patt" archivePath="marker8.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\marker9.patt" archivePath="marker9.patt" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\patt.hiro" archivePath="patt.hiro" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\MarkerImageHiro.jpg" archivePath="MarkerImageHiro.jpg" lastWriteTime="5/6/2013 2:14:15 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="5/6/2013 3:17:30 PM" />
+  <file source="C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Background.png" archivePath="Background.png" lastWriteTime="5/6/2013 2:14:15 PM" />
 </xapCache>

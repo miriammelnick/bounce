@@ -536,3 +536,32 @@ C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - 
 \\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\AppManifest.xaml
 \\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Tutorial8___Optical_Marker_Tracking___Phone.xap
 \\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\XapCacheFile.xml
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cancel.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Exit.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Reset2.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Rsign.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Save.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_1.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_1.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_1.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_2.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_2.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_2.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBS.1Surface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_3.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_3.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_3.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cancel.fbx
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Exit.fbx
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Reset2.fbx
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Rsign.fbx
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Save.fbx
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\size.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube_2Surface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CylinderSurface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_4.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBSSurface_Color_0.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_0.xnb

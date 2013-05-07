@@ -75,9 +75,11 @@ namespace BounceLib
         SpriteFont uiFont;
         Scene scene;
         MarkerNode groundMarkerNode, toolbarMarkerNode1, toolbarMarkerNode2;
+        MarkerNode menuMarkerNode1, menuMarkerNode2, menuMarkerNode3, menuMarkerNode4;
         bool useStaticImage = false;
         bool useSingleMarker = false;
         bool betterFPS = true; // has trade-off of worse tracking if set to true
+        TransformNode cancelTransNode, resetTransNode, scaleTransNode, exitTransNode, rotateTransNode;
 
 
         LightNode lightNode;
@@ -286,6 +288,21 @@ namespace BounceLib
 
             //groundMarkerNode.AddChild(lightNode);
 
+            // Create a marker node to track each menu array
+            menuMarkerNode1 = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDBounceMenu1.xml",
+                NyARToolkitIdTracker.ComputationMethod.Average);
+            menuMarkerNode2 = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDBounceMenu2.xml",
+                NyARToolkitIdTracker.ComputationMethod.Average);
+            menuMarkerNode3 = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDBounceMenu3.xml",
+                NyARToolkitIdTracker.ComputationMethod.Average);
+            menuMarkerNode4 = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDBounceMenu4.xml",
+                NyARToolkitIdTracker.ComputationMethod.Average);
+
+            scene.RootNode.AddChild(menuMarkerNode1);
+            scene.RootNode.AddChild(menuMarkerNode2);
+            scene.RootNode.AddChild(menuMarkerNode3);
+            scene.RootNode.AddChild(menuMarkerNode4);
+
             CreateModels();
 
         }
@@ -387,6 +404,64 @@ namespace BounceLib
 
             laserGroup = new TransformNode();
             groundMarkerNode.AddChild(laserGroup);
+
+            #region load the menu buttons
+            // Add Rotate button to menu
+            GeometryNode rotateNode = new GeometryNode("Rotate");
+            rotateNode.Model = (Model)loader.Load("", "Rsign");
+            ((Model)rotateNode.Model).UseInternalMaterials = true;
+            rotateTransNode = new TransformNode();
+
+            menuMarkerNode1.AddChild(rotateTransNode);
+            rotateTransNode.AddChild(rotateNode);
+
+
+            // Add Scale button to menu
+            GeometryNode scaleNode = new GeometryNode("Scale");
+            scaleNode.Model = (Model)loader.Load("", "size");
+            ((Model)scaleNode.Model).UseInternalMaterials = true;
+            scaleTransNode = new TransformNode();
+
+            menuMarkerNode2.AddChild(scaleTransNode);
+            scaleTransNode.AddChild(scaleNode);
+
+            // Add Cancel button to menu
+            GeometryNode cancelNode = new GeometryNode("Cancel");
+            cancelNode.Model = (Model)loader.Load("", "Cancel");
+            ((Model)cancelNode.Model).UseInternalMaterials = true;
+            cancelTransNode = new TransformNode()
+            {
+                Translation = new Vector3(0, 0, 0)
+            };
+
+            menuMarkerNode3.AddChild(cancelTransNode);
+            cancelTransNode.AddChild(cancelNode);
+
+
+            // Add Reset button to menu
+            GeometryNode resetNode = new GeometryNode("Reset");
+            resetNode.Model = (Model)loader.Load("", "Reset2");
+            ((Model)resetNode.Model).UseInternalMaterials = true;
+            resetTransNode = new TransformNode()
+            {
+                Translation = new Vector3(0, 0, 0)
+            };
+
+            menuMarkerNode2.AddChild(resetTransNode);
+            resetTransNode.AddChild(resetNode);
+
+            // Add Exit button to menu
+            GeometryNode exitNode = new GeometryNode("Exit");
+            exitNode.Model = (Model)loader.Load("", "Exit");
+            ((Model)exitNode.Model).UseInternalMaterials = true;
+            exitTransNode = new TransformNode()
+            {
+                Translation = new Vector3(0, 0, 0)
+            };
+
+            menuMarkerNode4.AddChild(exitTransNode);
+            exitTransNode.AddChild(exitNode);
+            #endregion
             /*
 #if WINDOWS_PHONE
             FireParticleEffect fireParticles = new FireParticleEffect(50);
@@ -671,6 +746,36 @@ namespace BounceLib
                     createLaser();
                 countdown = 0;
             }
+
+            #region draw buttons on menu
+            if (!menuMarkerNode1.MarkerFound && menuMarkerNode2.MarkerFound && menuMarkerNode3.MarkerFound &&
+                menuMarkerNode4.MarkerFound)
+            {
+                // they chose 1st button
+                UI2DRenderer.WriteText(new Vector2(10, 10), "1st button selected", Color.Blue, sampleFont);
+
+            }
+            else if (menuMarkerNode1.MarkerFound && !menuMarkerNode2.MarkerFound && menuMarkerNode3.MarkerFound &&
+              menuMarkerNode4.MarkerFound)
+            {
+                // they chose 2nd button
+                UI2DRenderer.WriteText(new Vector2(10, 10), "2nd button selected", Color.Blue, sampleFont);
+
+            } else if (menuMarkerNode1.MarkerFound && menuMarkerNode2.MarkerFound && !menuMarkerNode3.MarkerFound &&
+                menuMarkerNode4.MarkerFound)
+            {
+                // they chose 3rd button
+                UI2DRenderer.WriteText(new Vector2(10, 10), "3rd button selected", Color.Blue, sampleFont);
+
+            }
+            else if (menuMarkerNode1.MarkerFound && menuMarkerNode2.MarkerFound && menuMarkerNode3.MarkerFound &&
+              !menuMarkerNode4.MarkerFound)
+            {
+                // they chose 4th button
+                UI2DRenderer.WriteText(new Vector2(10, 10), "4th button selected", Color.Blue, sampleFont);
+
+            }
+            #endregion
 
             label = countdown.ToString();
 
