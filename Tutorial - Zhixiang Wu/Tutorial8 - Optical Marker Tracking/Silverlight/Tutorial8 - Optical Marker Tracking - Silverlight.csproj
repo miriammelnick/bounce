@@ -103,6 +103,7 @@
     <ProjectReference Include="..\BounceLib.csproj">
       <Project>{4D06C9D8-33C0-4DF4-82E3-7CD29FE7BC89}</Project>
       <Name>BounceLib</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />

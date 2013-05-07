@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\Object.xnb</Output>
-      <Time>2013-05-06T20:38:18.8737494-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\Object.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>rotation.jpg</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\rotation.xnb</Output>
-      <Time>2013-05-06T20:38:19.0427694-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\rotation.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>rotate.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\rotate.xnb</Output>
-      <Time>2013-05-06T20:38:19.037769-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\rotate.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>S.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\S.xnb</Output>
-      <Time>2013-05-06T20:38:18.8757482-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\S.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>t.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\t.xnb</Output>
-      <Time>2013-05-06T20:38:19.0437701-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\t.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>camera.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\camera.xnb</Output>
-      <Time>2013-05-06T20:38:18.9627601-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\camera.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>transfer.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\transfer.xnb</Output>
-      <Time>2013-05-06T20:38:19.0457738-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\transfer.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>reset.jpg</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\reset.xnb</Output>
-      <Time>2013-05-06T20:38:19.0357692-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\reset.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>hikingsticktexture.jpg</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\hikingsticktexture.xnb</Output>
-      <Time>2013-05-06T20:38:19.0047656-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\hikingsticktexture.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>UIFont.spritefont</Source>
@@ -88,8 +88,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\UIFont.xnb</Output>
-      <Time>2013-05-06T20:38:18.9447571-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\UIFont.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>Sample.spritefont</Source>
@@ -97,8 +97,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\Sample.xnb</Output>
-      <Time>2013-05-06T20:38:18.8787491-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\Sample.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>DebugFont.spritefont</Source>
@@ -106,8 +106,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\DebugFont.xnb</Output>
-      <Time>2013-05-06T20:38:18.7447324-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\DebugFont.xnb</Output>
+      <Time>2013-05-07T07:49:16-04:00</Time>
     </Item>
     <Item>
       <Source>golf_ball.FBX</Source>
@@ -115,11 +115,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\golf_ball.xnb</Output>
-      <Time>2013-05-06T20:38:18.9927645-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\golf_ball.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
       <Dependency>
-        <Key>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\golf_ball_0.xml</Key>
-        <Value>2013-05-06T20:56:39.1378615-04:00</Value>
+        <Key>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\golf_ball_0.xml</Key>
+        <Value>2013-05-07T10:15:04-04:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -128,11 +128,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\hikingstick3.xnb</Output>
-      <Time>2013-05-06T20:38:18.9987645-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\hikingstick3.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
       <Dependency>
-        <Key>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\hikingstick3_0.xml</Key>
-        <Value>2013-05-06T20:56:39.3778933-04:00</Value>
+        <Key>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\hikingstick3_0.xml</Key>
+        <Value>2013-05-07T10:15:05-04:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -141,37 +141,37 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\bouncelevel1panels.xnb</Output>
-      <Time>2013-05-06T20:38:18.9617594-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\bouncelevel1panels.xnb</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
       <Dependency>
-        <Key>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\bouncelevel1panels_0.xml</Key>
-        <Value>2013-05-06T20:56:39.5109101-04:00</Value>
+        <Key>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\bouncelevel1panels_0.xml</Key>
+        <Value>2013-05-07T10:15:05-04:00</Value>
       </Dependency>
-      <Request>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb</Request>
+      <Request>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb</Request>
     </Item>
     <Item>
       <Source>golf_ball.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\golf_ball_0.xml</Output>
-      <Time>2013-05-06T20:38:18.9927645-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\golf_ball_0.xml</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>hikingstick3.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\hikingstick3_0.xml</Output>
-      <Time>2013-05-06T20:38:18.9987645-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\hikingstick3_0.xml</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
       <Source>bouncelevel1panels.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\bouncelevel1panels_0.xml</Output>
-      <Time>2013-05-06T20:38:18.9617594-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\bouncelevel1panels_0.xml</Output>
+      <Time>2013-05-07T07:49:17-04:00</Time>
     </Item>
     <Item>
-      <Source>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\8CB63E43\bouncelevel1panels.fbm\Cube2.1Surface_Color.png</Source>
+      <Source>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\FBX\7FF12F9E\bouncelevel1panels.fbm\Cube2.1Surface_Color.png</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -183,8 +183,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb</Output>
-      <Time>2013-05-06T20:56:39.4469019-04:00</Time>
+      <Output>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb</Output>
+      <Time>2013-05-07T10:15:05-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -193,39 +193,39 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Ivan\Documents\NetBeansProjects\JavaApplication1\src\bounce\bin\Windows Phone\Content\</OutputDirectory>
+      <RootDirectory>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\</RootDirectory>
+      <LoggerRootDirectory>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\</LoggerRootDirectory>
+      <IntermediateDirectory>\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2012-09-06T15:52:54-04:00</Value>
+        <Value>2012-09-06T14:52:54-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2012-09-06T15:52:54-04:00</Value>
+        <Value>2012-09-06T14:52:54-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2012-09-06T15:52:54-04:00</Value>
+        <Value>2012-09-06T14:52:54-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2012-09-06T15:52:54-04:00</Value>
+        <Value>2012-09-06T14:52:54-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2012-09-06T15:52:54-04:00</Value>
+        <Value>2012-09-06T14:52:54-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2012-09-06T15:52:54-04:00</Value>
+        <Value>2012-09-06T14:52:54-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-03-05T23:23:08.5061388-05:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-05-07T08:27:15.3697952-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

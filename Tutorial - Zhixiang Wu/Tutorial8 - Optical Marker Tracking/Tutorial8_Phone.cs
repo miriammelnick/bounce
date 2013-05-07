@@ -61,11 +61,13 @@ using GoblinXNA.UI.UI2D;
 
 using GoblinXNA.Physics;
 using GoblinXNA.Physics.Matali;
+using Komires.MataliPhysics;
+using MataliPhysicsObject = Komires.MataliPhysics.PhysicsObject;
 #if WINDOWS_PHONE
 using GoblinXNA.Graphics.ParticleEffects2D;
 #endif
 
-namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
+namespace BounceLib
 {
     public class Tutorial8_Phone
     {
@@ -89,11 +91,18 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
         string label = "Nothing is selected";
         Camera camera;
 
+        GeometryNode levelNode;
+        TransformNode levelTransNode;
         TransformNode poleTransNode;
         GeometryNode poleNode;
         TransformNode ballTransNode;
         GeometryNode ballNode;
         TransformNode laserGroup;
+
+        /* Scaling and Rotation Variables */
+        string transMode = "ROTATION"; //designates transformation mode, takes on values of "ROTATION" and "SCALING"
+        string selectedObj = ""; //designates selected object by name
+        Vector3 initialSelectedPosition = new Vector3(-1, -1, -1); //stores initial position of selected object
 
         bool ball_on = false;
         string resultlabel = "";
@@ -284,28 +293,32 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
         private void CreateModels()
         {
             ModelLoader loader = new ModelLoader();
-            
-            GeometryNode levelNode = new GeometryNode("level1");
+
+            #region load the models for the first level
+            levelNode = new GeometryNode("level1");
             levelNode.Model = (Model)loader.Load("", "bouncelevel1panels");
             ((Model)levelNode.Model).UseInternalMaterials = true;
             Vector3 dimension = Vector3Helper.GetDimensions(levelNode.Model.MinimumBoundingBox);
             float scale2 = markerSize / Math.Max(dimension.X, dimension.Z) * 5;
-            TransformNode levelTransNode = new TransformNode()
+            levelTransNode = new TransformNode()
             {
                 Translation = new Vector3(-markerSize, -3 * markerSize, 0),
                 //Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90)) *
                 //         Quaternion.CreateFromAxisAngle(Vector3.UnitY, MathHelper.ToRadians(90)),
                 Scale = new Vector3(scale2, scale2, scale2)
             };
-            levelNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
 
+            levelNode.Physics.MaterialName = "level1";
+            levelNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
             levelNode.Physics.Collidable = true;
             levelNode.Physics.Mass = 100f;
             levelNode.AddToPhysicsEngine = true;
 
             groundMarkerNode.AddChild(levelTransNode);
             levelTransNode.AddChild(levelNode);
+            #endregion
 
+            #region load the cue stick models
             poleNode = new GeometryNode("Pole");
             poleNode.Model = new Box(20, 100, 20);
 
@@ -315,11 +328,11 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             boxMaterial.Specular = Color.White.ToVector4();
             boxMaterial.SpecularPower = 10;
             //boxMaterial.Texture = content.Load<Texture2D>("wood");
-
             poleNode.Material = boxMaterial;
 
+            poleNode.Physics = new MataliObject(poleNode);
+            ((MataliObject)poleNode.Physics).CollisionStartCallback = ToolBar1CollideWithObject;
             poleNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Box;
-
             //poleNode.Physics.Interactable = true;
             //craftNode.Physics.Pickable = true;
             poleNode.Physics.Collidable = true;
@@ -336,7 +349,9 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             groundMarkerNode.AddChild(poleTransNode);
             //toolbarMarkerNode1.AddChild(poleTransNode);
             poleTransNode.AddChild(poleNode);
+            #endregion
 
+            #region load the ball object
             ballNode = new GeometryNode("Ball");
             ballNode.Model = new Sphere(15, 20, 20);
 
@@ -368,7 +383,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
             groundMarkerNode.AddChild(ballTransNode);
             //toolbarMarkerNode1.AddChild(ballTransNode);
             ballTransNode.AddChild(ballNode);
-
+            #endregion
 
             laserGroup = new TransformNode();
             groundMarkerNode.AddChild(laserGroup);
@@ -416,6 +431,20 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
 #endif
             }
 
+        }
+
+        private void ToolBar1CollideWithObject(MataliPhysicsObject baseObject, MataliPhysicsObject collidingObject)
+        {
+            string materialName = ((IPhysicsObject)collidingObject.UserTagObj).MaterialName;
+            if (materialName == "level1")
+            {
+                //notify user
+                Notifier.AddMessage("Selected the level1 panels!");
+
+                //record initial position
+                initialSelectedPosition = levelNode.WorldTransformation.Translation;
+                selectedObj = "level1";
+            }
         }
 
 
@@ -552,6 +581,47 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                 //head = Vector3.Transform(head, Matrix.Invert(groundMarkerNode.WorldTransformation));
 
                 //addLaser(head, tail);
+
+                switch (selectedObj)
+                {
+                    case "level1":
+                        Vector3 cueVector = polemat.Translation - initialSelectedPosition;
+                        Vector3 abs_cueVector = new Vector3(Math.Abs(cueVector.X), Math.Abs(cueVector.Y), Math.Abs(cueVector.Z));
+                        float scaledLength = abs_cueVector.Length();
+                        float direction = 1;
+                        if (transMode == "ROTATION" && scaledLength > 100)
+                        {
+                            if (abs_cueVector.X > abs_cueVector.Y && abs_cueVector.X > abs_cueVector.Z)
+                            {
+                                if (cueVector.X < 0)
+                                    direction = -1;
+                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationY(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelTransNode.WorldTransformation);
+                                levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
+                            }
+                            else if (abs_cueVector.Y > abs_cueVector.X && abs_cueVector.Y > abs_cueVector.Z)
+                            {
+                                if (cueVector.Y > 0)
+                                    direction = -1;
+                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationX(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelTransNode.WorldTransformation);
+                                levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
+                            }
+                            else if (abs_cueVector.Z > abs_cueVector.X && abs_cueVector.Z > abs_cueVector.Y)
+                            {
+                                if (cueVector.Z > 0)
+                                    direction = -1;
+                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationZ(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelTransNode.WorldTransformation);
+                                levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
+                            }
+                        }
+                        else if (transMode == "SCALING" && scaledLength > 100)
+                        {
+                            float scale = (float)Math.Pow(abs_cueVector.Length() / 100, 2);
+                            levelTransNode.Scale = new Vector3(scale, scale, scale);
+                        }
+                        break;
+                    case "":
+                        break;
+                }
             }
             else
             {
@@ -562,7 +632,7 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                     ballTransNode.WorldTransformation = Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0);
                 }
 
-
+                selectedObj = "";
             }
 
             if (toolbarMarkerNode1.MarkerFound && toolbarMarkerNode2.MarkerFound)
@@ -642,14 +712,11 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
         {
             G2DComponent comp = (G2DComponent)source;
 
-            if (comp is G2DButton)
+            switch (comp.Text)
             {
-                if (comp.Text == "reset")
-                {
+                case "reset":
                     ballNode.Physics.InitialLinearVelocity = new Vector3(0, 0, 0);
 
-                    laserGroup.RemoveChildren();
-                    laserNum = 0;
                     scene.PhysicsEngine.RestartsSimulation();
                     ((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0));
                     ballTransNode.WorldTransformation = Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0);
@@ -659,7 +726,23 @@ namespace Tutorial8___Optical_Marker_Tracking___PhoneLib
                     //scene.PhysicsEngine.Update(1 / 30f);
 
                     ball_on = false;
-                }
+                    break;
+
+                case "Rotation":
+                    transMode = "ROTATION";
+
+                    //add code here to change menu items and selector cue
+
+                    Notifier.AddMessage("Rotation Mode Activated");
+                    break;
+
+                case "Scaling":
+                    transMode = "SCALING";
+
+                    //add code here to change menu items and selector cue
+
+                    Notifier.AddMessage("Scaling Mode Activated");
+                    break;
             }
         }
 
