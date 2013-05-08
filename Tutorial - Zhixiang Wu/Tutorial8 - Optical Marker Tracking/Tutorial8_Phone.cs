@@ -107,7 +107,7 @@ namespace BounceLib
         TransformNode ballTransNode;
         GeometryNode ballNode;
         TransformNode laserGroup;
-        TransformNode cancelTransNode, resetTransNode, scaleTransNode, exitTransNode, rotateTransNode;
+        TransformNode cancelTransNode, resetTransNode, scaleTransNode, exitTransNode, rotateTransNode, saveTransNode;
 
         //list of all the level models
         List<Model> levelModelList = new List<Model>();
@@ -464,10 +464,14 @@ namespace BounceLib
         private void CreateModels()
         {
             ModelLoader loader = new ModelLoader();
+            float scale2 = 1;
+            if (levelNode != null && levelNode.Model != null )
+            {
+                //calculate scaling for models to fit nicely in scene
+                Vector3 dimension = Vector3Helper.GetDimensions(levelNode.Model.MinimumBoundingBox);
+                scale2 = markerSize/Math.Max(dimension.X, dimension.Z)*5;
 
-            //calculate scaling for models to fit nicely in scene
-            Vector3 dimension = Vector3Helper.GetDimensions(levelNode.Model.MinimumBoundingBox);
-            float scale2 = markerSize / Math.Max(dimension.X, dimension.Z) * 5;
+            }
 
             #region load the model for the floor
             //fill in
@@ -605,7 +609,12 @@ namespace BounceLib
             GeometryNode rotateNode = new GeometryNode("Rotate");
             rotateNode.Model = (Model)loader.Load("", "Rsign");
             ((Model)rotateNode.Model).UseInternalMaterials = true;
-            rotateTransNode = new TransformNode();
+            rotateTransNode = new TransformNode
+            {
+                Translation = new Vector3(-30, 80, 0f),
+                Rotation = Quaternion.CreateFromYawPitchRoll(MathHelper.ToRadians(270), MathHelper.ToRadians(180), MathHelper.ToRadians(105)),
+                Scale = new Vector3(0.1f, 0.1f, 0.1f)
+            };
 
             menuMarkerNode1.AddChild(rotateTransNode);
             rotateTransNode.AddChild(rotateNode);
@@ -615,34 +624,28 @@ namespace BounceLib
             GeometryNode scaleNode = new GeometryNode("Scale");
             scaleNode.Model = (Model)loader.Load("", "size");
             ((Model)scaleNode.Model).UseInternalMaterials = true;
-            scaleTransNode = new TransformNode();
+            scaleTransNode = new TransformNode
+            {
+                Translation = new Vector3(-30, 80, 0f),
+                Rotation = Quaternion.CreateFromYawPitchRoll(MathHelper.ToRadians(330), MathHelper.ToRadians(315), MathHelper.ToRadians(120)),
+                Scale = new Vector3(0.3f, 0.3f, 0.3f)
+            };
 
             menuMarkerNode2.AddChild(scaleTransNode);
             scaleTransNode.AddChild(scaleNode);
-
-            // Add Cancel button to menu
-            GeometryNode cancelNode = new GeometryNode("Cancel");
-            cancelNode.Model = (Model)loader.Load("", "Cancel");
-            ((Model)cancelNode.Model).UseInternalMaterials = true;
-            cancelTransNode = new TransformNode()
-            {
-                Translation = new Vector3(0, 0, 0)
-            };
-
-            menuMarkerNode3.AddChild(cancelTransNode);
-            cancelTransNode.AddChild(cancelNode);
-
-
+            
             // Add Reset button to menu
             GeometryNode resetNode = new GeometryNode("Reset");
             resetNode.Model = (Model)loader.Load("", "Reset2");
             ((Model)resetNode.Model).UseInternalMaterials = true;
             resetTransNode = new TransformNode()
             {
-                Translation = new Vector3(0, 0, 0)
+                Translation = new Vector3(-30, 80, 0),
+                Scale = new Vector3(0.2f, 0.2f, 0.2f)
+
             };
 
-            menuMarkerNode2.AddChild(resetTransNode);
+            menuMarkerNode3.AddChild(resetTransNode);
             resetTransNode.AddChild(resetNode);
 
             // Add Exit button to menu
@@ -651,11 +654,41 @@ namespace BounceLib
             ((Model)exitNode.Model).UseInternalMaterials = true;
             exitTransNode = new TransformNode()
             {
-                Translation = new Vector3(0, 0, 0)
+                Translation = new Vector3(-30, 80, 0),
+                Scale = new Vector3(0.2f, 0.2f, 0.2f)
             };
 
             menuMarkerNode4.AddChild(exitTransNode);
             exitTransNode.AddChild(exitNode);
+
+
+            // Add Cancel button to menu
+            GeometryNode cancelNode = new GeometryNode("Cancel");
+            cancelNode.Model = (Model)loader.Load("", "Cancel");
+            ((Model)cancelNode.Model).UseInternalMaterials = true;
+            cancelTransNode = new TransformNode()
+            {
+                Translation = new Vector3(-30, 80, 0),
+                Scale = new Vector3(0.2f, 0.2f, 0.2f)
+            };
+
+            //menuMarkerNode1.AddChild(cancelTransNode);
+            cancelTransNode.AddChild(cancelNode);
+
+
+            // Add Save button to menu
+            GeometryNode saveNode = new GeometryNode("Save");
+            saveNode.Model = (Model)loader.Load("", "Save");
+            ((Model)saveNode.Model).UseInternalMaterials = true;
+            saveTransNode = new TransformNode()
+            {
+                Translation = new Vector3(-30, 80, 0),
+                Scale = new Vector3(0.2f, 0.2f, 0.2f)
+            };
+
+            //menuMarkerNode3.AddChild(saveTransNode);
+            saveTransNode.AddChild(saveNode);
+
             #endregion
             /*
 #if WINDOWS_PHONE

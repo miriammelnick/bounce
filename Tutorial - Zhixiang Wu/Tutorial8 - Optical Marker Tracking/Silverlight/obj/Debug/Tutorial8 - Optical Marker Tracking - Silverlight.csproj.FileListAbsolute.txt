@@ -482,3 +482,5 @@ C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phon
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\explosion.xnb
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\explosion.png
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\fire.png
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Youwon.xnb
+C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_1.xnb
