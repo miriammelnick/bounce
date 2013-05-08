@@ -1,2 +1,1 @@
-\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\obj\Windows Phone\Debug\BounceLibContent.contentprojResolveAssemblyReference.cache
 C:\Users\Miriam Melnick\Documents\Bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Content\obj\Windows Phone\Debug\BounceLibContent.contentprojResolveAssemblyReference.cache

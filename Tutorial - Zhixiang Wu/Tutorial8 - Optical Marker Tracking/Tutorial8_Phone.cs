@@ -39,6 +39,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Media;
+using System.Collections;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
@@ -78,12 +79,11 @@ namespace BounceLib
         SpriteFont sampleFont;
         SpriteFont uiFont;
         Scene scene;
-        MarkerNode groundMarkerNode, toolbarMarkerNode1, toolbarMarkerNode2;
+        MarkerNode groundMarkerNode, toolbarMarkerNode1, toolbarMarkerNode2, resetMarkerNode;
         MarkerNode menuMarkerNode1, menuMarkerNode2, menuMarkerNode3, menuMarkerNode4;
         bool useStaticImage = false;
         bool useSingleMarker = false;
         bool betterFPS = true; // has trade-off of worse tracking if set to true
-        TransformNode cancelTransNode, resetTransNode, scaleTransNode, exitTransNode, rotateTransNode;
 
         LightNode lightNode;
         Viewport viewport;
@@ -96,18 +96,31 @@ namespace BounceLib
         string label = "Nothing is selected";
         Camera camera;
 
+        //geometry and transformation nodes for the objects in the scene
+        GeometryNode goalNode;
+        TransformNode goalTransNode;
         GeometryNode levelNode;
         TransformNode levelTransNode;
+        GeometryNode levelCompletedNode;
         TransformNode poleTransNode;
         GeometryNode poleNode;
         TransformNode ballTransNode;
         GeometryNode ballNode;
         TransformNode laserGroup;
+        TransformNode cancelTransNode, resetTransNode, scaleTransNode, exitTransNode, rotateTransNode;
 
-        /* Scaling and Rotation Variables */
-        string transMode = "ROTATION"; //designates transformation mode, takes on values of "ROTATION" and "SCALING" (and "" for neither)
+        //list of all the level models
+        List<Model> levelModelList = new List<Model>();
+        List<Model> goalModelList = new List<Model>();
+
+        // Scaling and Rotation Variables
+        string gameMode = "ROTATION"; //designates transformation mode, takes on values of "ROTATION" and "SCALING" (and "" for neither)
         string selectedObj = ""; //designates selected object by name
         Vector3 initialSelectedPosition = new Vector3(-1, -1, -1); //stores initial position of selected object
+
+        int currentLevel = 1; //designates the current level the game is on
+        int collisionCounter = 0; //counts the number of collisions a ball has made on a single level
+        int minNumCollisions = 0; //designates the minimum number of collisions required for a single level
 
         bool ball_on = false;
         string resultlabel = "";
@@ -423,6 +436,9 @@ namespace BounceLib
             toolbarMarkerNode2 = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDToolbar4.xml",
                 NyARToolkitTracker.ComputationMethod.Average);
             scene.RootNode.AddChild(toolbarMarkerNode2);
+            resetMarkerNode = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDToolbar5.xml",
+                NyARToolkitTracker.ComputationMethod.Average);
+            scene.RootNode.AddChild(resetMarkerNode);
 
             //groundMarkerNode.AddChild(lightNode);
 
@@ -449,21 +465,39 @@ namespace BounceLib
         {
             ModelLoader loader = new ModelLoader();
 
-            #region load the models for the first level
-            levelNode = new GeometryNode("level1");
-            levelNode.Model = (Model)loader.Load("", "bouncelevel1panels");
-            ((Model)levelNode.Model).UseInternalMaterials = true;
+            //calculate scaling for models to fit nicely in scene
             Vector3 dimension = Vector3Helper.GetDimensions(levelNode.Model.MinimumBoundingBox);
             float scale2 = markerSize / Math.Max(dimension.X, dimension.Z) * 5;
+
+            #region load the model for the floor
+            //fill in
+            #endregion
+
+            #region preload all the level and goal models into levelModelList and goalModelList
+            for (int i = 1; i <= 1; i++)
+            {
+                levelModelList.Add((Model)loader.Load("", String.Format("bouncelevel{0}panels", i)));
+                //goalModelList.Add((Model)loader.Load("", String.Format("goallevel{0}", i)));
+            }
+            #endregion
+
+            /* Game levels models will be swapped by interchanging the models for the levelNode geometry node.
+             * The goalNode level will be swapped for the corresponding goal model as well.
+             * General conventions:
+             * - level models will be named bouncelevel<X>panels where <X> is the level
+             * - the goal model corresponding to each level will be named goallevel<X>
+             */
+            #region load the model for the level
+            levelNode = new GeometryNode("levelModel");
+            levelNode.Model = levelModelList[0];
+            ((Model)levelNode.Model).UseInternalMaterials = true;
             levelTransNode = new TransformNode()
             {
-                Translation = new Vector3(-markerSize, -3 * markerSize, 0),
-                //Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90)) *
-                //         Quaternion.CreateFromAxisAngle(Vector3.UnitY, MathHelper.ToRadians(90)),
+                Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90)),
                 Scale = new Vector3(scale2, scale2, scale2)
             };
 
-            levelNode.Physics.MaterialName = "level1";
+            levelNode.Physics.MaterialName = "levelModel";
             levelNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
             levelNode.Physics.Collidable = true;
             levelNode.Physics.Mass = 100f;
@@ -473,61 +507,70 @@ namespace BounceLib
             levelTransNode.AddChild(levelNode);
             #endregion
 
-            #region load the cue stick models
+            #region load model for goal detection
+            //uncomment when we have the goal models
+            goalNode = new GeometryNode("goalModel");
+            //goalNode.Model = goalModelList[0];
+            //((Model)goalNode.Model).UseInternalMaterials = true;
+            //goalTransNode = new TransformNode()
+            //{
+            //    Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90)),
+            //    Scale = new Vector3(scale2, scale2, scale2)
+            //};
+
+            //goalNode.Physics.MaterialName = "goalModel";
+            //goalNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
+            //goalNode.Physics.Collidable = true;
+            //goalNode.Physics.Mass = 100f;
+            //goalNode.AddToPhysicsEngine = true;
+
+            //groundMarkerNode.AddChild(goalTransNode);
+            //goalTransNode.AddChild(goalNode);
+            #endregion
+
+            #region load the cue stick model
             poleNode = new GeometryNode("Pole");
             poleNode.Model = new Box(20, 100, 20);
 
-            // Create a material to apply to the box model
-            Material boxMaterial = new Material();
-            boxMaterial.Diffuse = new Vector4(0.5f, 0, 0, 1);
-            boxMaterial.Specular = Color.White.ToVector4();
-            boxMaterial.SpecularPower = 10;
-            //boxMaterial.Texture = content.Load<Texture2D>("wood");
-            poleNode.Material = boxMaterial;
+            // Create a material to apply to the box model ***we should probably add a nice looking model to this
+            Material poleMaterial = new Material();
+            poleMaterial.Diffuse = new Vector4(0.5f, 0, 0, 1);
+            poleMaterial.Specular = Color.White.ToVector4();
+            poleMaterial.SpecularPower = 10;
+            poleNode.Material = poleMaterial;
 
             poleNode.Physics = new MataliObject(poleNode);
             ((MataliObject)poleNode.Physics).CollisionStartCallback = ToolBar1CollideWithObject;
             poleNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Box;
-            //poleNode.Physics.Interactable = true;
-            //craftNode.Physics.Pickable = true;
             poleNode.Physics.Collidable = true;
             poleNode.Physics.Mass = 100f;
-
-            //craftNode.Physics.InitialLinearVelocity = Vector3.Zero;
             poleNode.AddToPhysicsEngine = true;
 
             poleTransNode = new TransformNode();
-            poleTransNode.Translation = new Vector3(0, 0, 0);
             poleTransNode.Translation = new Vector3(-3 * markerSize, -3 * markerSize, 0);
-            //poleTransNode.Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90));
 
             groundMarkerNode.AddChild(poleTransNode);
-            //toolbarMarkerNode1.AddChild(poleTransNode);
             poleTransNode.AddChild(poleNode);
             #endregion
 
             #region load the ball object
-            ballNode = new GeometryNode("Ball");
+            ballNode = new GeometryNode("ball");
             ballNode.Model = new Sphere(15, 20, 20);
 
-            // Create a material to apply to the box model
+            // Create a material to apply to the box model ***maybe we can come up with a better model for the ball as well
             Material ballMaterial = new Material();
             ballMaterial.Diffuse = new Vector4(0f, 0.5f, 0, 1);
             ballMaterial.Specular = Color.White.ToVector4();
             ballMaterial.SpecularPower = 10;
-            //boxMaterial.Texture = content.Load<Texture2D>("wood");
-
             ballNode.Material = ballMaterial;
 
             ballNode.Physics = new MataliObject(ballNode);
+            ((MataliObject)ballNode.Physics).CollisionStartCallback = BallCollideWithObject;
             ((MataliObject)ballNode.Physics).Restitution = 1f;
             ballNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Sphere;
-
             ballNode.Physics.Interactable = true;
-            //craftNode.Physics.Pickable = true;
             ballNode.Physics.Collidable = true;
             ballNode.Physics.Mass = 10f;
-            //ballNode.Physics.InitialLinearVelocity = Vector3.Zero;
             ballNode.AddToPhysicsEngine = true;
 
 
@@ -536,8 +579,22 @@ namespace BounceLib
             ballTransNode.Translation = new Vector3(-3 * markerSize, -3 * markerSize + 75, 0);
 
             groundMarkerNode.AddChild(ballTransNode);
-            //toolbarMarkerNode1.AddChild(ballTransNode);
             ballTransNode.AddChild(ballNode);
+            #endregion
+
+            #region load the model for level transition after completion of a level
+            levelCompletedNode = new GeometryNode("levelCompletedModel");
+            levelCompletedNode.Model = (Model)loader.Load("", "Youwon");
+            ((Model)levelCompletedNode.Model).UseInternalMaterials = true;
+
+            levelCompletedNode.Physics.MaterialName = "levelCompletedModel";
+            levelCompletedNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
+            levelCompletedNode.Physics.Collidable = true;
+            levelCompletedNode.Physics.Mass = 100f;
+            levelCompletedNode.AddToPhysicsEngine = true;
+
+            groundMarkerNode.AddChild(levelCompletedNode);
+            levelCompletedNode.Enabled = false; //disable at first, enable once a level has ended
             #endregion
 
             laserGroup = new TransformNode();
@@ -622,26 +679,28 @@ namespace BounceLib
                 // model. We want to add more particles when it goes through the torus model
                 // and decrease the number after that
                 int numParticles = 0;
-#if WINDOWS_PHONE
+                
+                #if WINDOWS_PHONE
                 int maxFireParticles = 2;
-#else
-                    int maxFireParticles = 8;
-#endif
+                #else
+                int maxFireParticles = 8;
+                #endif
+                
                 if (particle is FireParticleEffect)
                     numParticles = maxFireParticles;
                 else
                     numParticles = 1;
 
                 Matrix world =  worldTransform * groundMarkerNode.WorldTransformation;
-#if WINDOWS_PHONE
+                #if WINDOWS_PHONE
                 for (int i = 0; i < (numParticles + 2) / 3; i++)
                     particle.AddParticles(Project(world.Translation));
 
-#else
-                    for(int i = 0; i < numParticles; i++)
-                        particle.AddParticle(worldTransform.Translation + worldTransform.Forward * 1000, 
-                            Vector3.Zero);
-#endif
+                #else
+                for(int i = 0; i < numParticles; i++)
+                    particle.AddParticle(worldTransform.Translation + worldTransform.Forward * 1000, 
+                        Vector3.Zero);
+                #endif
             }
 
         }
@@ -649,17 +708,57 @@ namespace BounceLib
         private void ToolBar1CollideWithObject(MataliPhysicsObject baseObject, MataliPhysicsObject collidingObject)
         {
             string materialName = ((IPhysicsObject)collidingObject.UserTagObj).MaterialName;
-            if (materialName == "level1")
+            
+            switch (materialName)
             {
-                //notify user
-                Notifier.AddMessage("Selected the level1 panels!");
+                case "levelModel":
+                    Notifier.AddMessage("Selected the level panels!");
 
-                //record initial position
-                initialSelectedPosition = levelNode.WorldTransformation.Translation;
-                selectedObj = "level1";
+                    //record initial position of the cue marker
+                    initialSelectedPosition = poleNode.WorldTransformation.Translation;
+                    selectedObj = "levelModel";
+                    break;
+                case "levelCompletedModel":
+                    currentLevel++;
+                    Notifier.AddMessage(String.Format("Moving on to level {0}...", currentLevel));
+
+                    //update the panels and goal models for the next level
+                    levelNode.Model = levelModelList[currentLevel - 1];
+
+                    //swap level panels model for level transition model
+                    levelCompletedNode.Enabled = false;
+                    levelNode.Enabled = true;
+                    break;
             }
         }
 
+        /* Method to handle the collision of the ball and scene objects. If the colliding object is the goal node and
+         * the minimum number of collisions has been met, swap to level completion notification model. If the colliding 
+         * object is a panel, increment the collision counter. 
+         */
+        private void BallCollideWithObject(MataliPhysicsObject baseObject, MataliPhysicsObject collidingObject)
+        {
+            string materialName = ((IPhysicsObject)collidingObject.UserTagObj).MaterialName;
+
+            switch (materialName)
+            {
+                case "levelModel":
+                    Notifier.AddMessage("Ball has collided with a panel!");
+
+                    collisionCounter++;
+                    break;
+                case "goalModel":
+                    if (collisionCounter < minNumCollisions)
+                        break;
+
+                    Notifier.AddMessage(String.Format("You've completed level {0}!", currentLevel));
+
+                    //swap transition model for level panels model
+                    levelCompletedNode.Enabled = true;
+                    levelNode.Enabled = false;
+                    break;
+            }
+        }
 
         private void createLaser()
         {
@@ -670,7 +769,7 @@ namespace BounceLib
 
             laserNum++;
 
-            GeometryNode laserNode = new GeometryNode("Ball");
+            GeometryNode laserNode = new GeometryNode("ball");
             laserNode.Model = new Sphere(5, 20, 20);
 
             // Create a material to apply to the box model
@@ -762,7 +861,7 @@ namespace BounceLib
 
         public void Draw(TimeSpan elapsedTime)
         {
-        #if STEREO_MODE
+            #if STEREO_MODE
             // Set the render target to be the left screen render target
             scene.SceneRenderTarget = stereoScreenLeft;
             // Render the scene viewed from the left eye to the left screen render target
@@ -779,12 +878,9 @@ namespace BounceLib
             
             State.Device.Clear(scene.BackgroundColor);
 
-        #else
+            #else
             State.Device.Viewport = viewport;
-        #endif
-
-            
-
+            #endif
             // Render the left and right render targets as textures
             State.SharedSpriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Opaque);
 
@@ -823,12 +919,12 @@ namespace BounceLib
 
                 switch (selectedObj)
                 {
-                    case "level1":
+                    case "levelModel":
                         Vector3 cueVector = polemat.Translation - initialSelectedPosition;
                         Vector3 abs_cueVector = new Vector3(Math.Abs(cueVector.X), Math.Abs(cueVector.Y), Math.Abs(cueVector.Z));
                         float scaledLength = abs_cueVector.Length();
                         float direction = 1;
-                        if (transMode == "ROTATION" && scaledLength > 100)
+                        if (gameMode == "ROTATION" && scaledLength > 100)
                         {
                             if (abs_cueVector.X > abs_cueVector.Y && abs_cueVector.X > abs_cueVector.Z)
                             {
@@ -852,7 +948,7 @@ namespace BounceLib
                                 levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
                             }
                         }
-                        else if (transMode == "SCALING" && scaledLength > 100)
+                        else if (gameMode == "SCALING" && scaledLength > 100)
                         {
                             float scale = (float)Math.Pow(abs_cueVector.Length() / 100, 2);
                             levelTransNode.Scale = new Vector3(scale, scale, scale);
@@ -872,6 +968,19 @@ namespace BounceLib
                 }
 
                 selectedObj = "";
+            }
+
+            //reset the ball position if resetMarkerNode is visible, only during the shooting mode of the game
+            if (resetMarkerNode.MarkerFound && gameMode == "SHOOTING")
+            {
+                ballNode.Physics.InitialLinearVelocity = new Vector3(0, 0, 0);
+
+                scene.PhysicsEngine.RestartsSimulation();
+                ((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0));
+                ballTransNode.WorldTransformation = Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0);
+
+                ball_on = false;
+                collisionCounter = 0;
             }
 
             if (toolbarMarkerNode1.MarkerFound && toolbarMarkerNode2.MarkerFound)
@@ -942,17 +1051,17 @@ namespace BounceLib
             #endregion
             label = countdown.ToString();
 
-#if STEREO_MODE
+            #if STEREO_MODE
             State.SharedSpriteBatch.Draw(stereoScreenLeft, leftRect, Color.White);
             State.SharedSpriteBatch.Draw(stereoScreenRight, rightRect, Color.White);
             State.SharedSpriteBatch.End();
 
-#else
+            #else
             //State.SharedSpriteBatch.Draw(stereoScreenLeft, leftRect, leftSource, Color.White);
             //State.SharedSpriteBatch.Draw(stereoScreenRight, rightRect, rightSource, Color.White);
             State.SharedSpriteBatch.End();
             scene.Draw(elapsedTime, false);
-#endif
+            #endif
 
         }
 
@@ -986,7 +1095,7 @@ namespace BounceLib
 
         }
 
-
+        //should delete this eventually
         private void HandleActionPerformed(object source)
         {
             G2DComponent comp = (G2DComponent)source;
@@ -1008,7 +1117,7 @@ namespace BounceLib
                     break;
 
                 case "Rotation":
-                    transMode = "ROTATION";
+                    gameMode = "ROTATION";
 
                     //add code here to change menu items and selector cue
 
@@ -1016,7 +1125,7 @@ namespace BounceLib
                     break;
 
                 case "Scaling":
-                    transMode = "SCALING";
+                    gameMode = "SCALING";
 
                     //add code here to change menu items and selector cue
 

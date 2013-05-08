@@ -19,6 +19,7 @@ Content\Exit.xnb
 Content\Reset2.xnb
 Content\Rsign.xnb
 Content\Save.xnb
+Content\Youwon.xnb
 Content\UIFont.xnb
 Content\Sample.xnb
 Content\DebugFont.xnb
@@ -41,6 +42,7 @@ Content\Sweep_NURBS.1Surface_Color_0.xnb
 Content\Cap_1Surface_Color_4.xnb
 Content\Cap_2Surface_Color_3.xnb
 Content\Extrude_NURBSSurface_Color_3.xnb
+Content\CubeSurface_Color_1.xnb
 Content\Object.png
 Content\rotation.jpg
 Content\UIFont.spritefont
