@@ -297,6 +297,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="X.fbx">
+      <Name>X</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="bouncelevel4panels.fbx">
       <Name>bouncelevel4panels</Name>
       <Importer>FbxImporter</Importer>
