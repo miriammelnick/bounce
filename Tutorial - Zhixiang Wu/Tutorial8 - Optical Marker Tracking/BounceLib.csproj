@@ -44,12 +44,8 @@
     <XnaCompressContent>false</XnaCompressContent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GoblinXNA">
-      <HintPath>D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\bin\Windows Phone\GoblinXNA.dll</HintPath>
-    </Reference>
-    <Reference Include="MataliPhysics">
-      <HintPath>D:\Program Files\GoblinXNAv4.0\GoblinXNAv4.0\bin\Windows Phone\MataliPhysics.dll</HintPath>
-    </Reference>
+    <Reference Include="GoblinXNA, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MataliPhysics, Version=1.8.0.0, Culture=neutral, PublicKeyToken=5c19458cf3fd6eb7, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Xna.Framework" />
     <Reference Include="Microsoft.Xna.Framework.Game" />
     <Reference Include="Microsoft.Xna.Framework.Graphics" />
@@ -183,6 +179,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GoblinXNA.dll" />
+    <Content Include="MataliPhysics.dll" />
     <Content Include="NyARIdGroundArray.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
