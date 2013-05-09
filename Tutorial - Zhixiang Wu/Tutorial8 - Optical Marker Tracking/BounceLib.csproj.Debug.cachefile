@@ -35,8 +35,8 @@ Content\goallevel15.xnb
 Content\goallevel2.xnb
 Content\goallevel3.xnb
 Content\goallevel4.xnb
-Content\bouncelevel4panels.xnb
 Content\X.xnb
+Content\bouncelevel4panels.xnb
 Content\UIFont.xnb
 Content\Sample.xnb
 Content\DebugFont.xnb
@@ -76,8 +76,8 @@ Content\PlatonicSurface_Color_2.xnb
 Content\PlatonicSurface_Color_3.xnb
 Content\PlatonicSurface_Color_4.xnb
 Content\PlatonicSurface_Color_5.xnb
-Content\Torus.1Surface_Color_1.xnb
 Content\Cube.2Surface_Color_0.xnb
+Content\Torus.1Surface_Color_1.xnb
 Content\Object.png
 Content\rotation.jpg
 Content\UIFont.spritefont
@@ -110,6 +110,7 @@ Content\goallevel15.fbx
 Content\goallevel2.fbx
 Content\goallevel3.fbx
 Content\goallevel4.fbx
+Content\bouncelevel4panels.fbx
 Content\fire.png
 NyARIdGroundArray.xml
 NyARToolkitGroundArray.xml
