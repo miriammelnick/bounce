@@ -34,7 +34,7 @@
 //#define USE_PATTERN_MARKER
 
 // Comment this line to use mono mode
-#define STEREO_MODE
+//#define STEREO_MODE
 
 using System;
 using System.Collections.Generic;
@@ -436,10 +436,10 @@ namespace BounceLib
 
             // groundMarkerNode.Smoother = new DESSmoother(0.3f, 0.5f);
 
-            toolbarMarkerNode1 = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDToolbar3.xml",
+            toolbarMarkerNode1 = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDBounceToolbar.xml",
                 NyARToolkitTracker.ComputationMethod.Average);
             scene.RootNode.AddChild(toolbarMarkerNode1);
-            toolbarMarkerNode2 = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDToolbar4.xml",
+            toolbarMarkerNode2 = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDBounceCue.xml",
                 NyARToolkitTracker.ComputationMethod.Average);
             scene.RootNode.AddChild(toolbarMarkerNode2);
             resetMarkerNode = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDToolbar5.xml",
