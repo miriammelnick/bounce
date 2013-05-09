@@ -1,1 +1,7 @@
 bin
+*.cachefile
+*.pdb
+*.dll
+*.contentproj
+FileListAbsolute.txt
+*.cache
