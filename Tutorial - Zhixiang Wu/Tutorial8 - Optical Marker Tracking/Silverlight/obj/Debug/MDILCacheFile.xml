@@ -1,9 +1,9 @@
-﻿<xapCache source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\..\..\bin\Windows Phone\Tutorial8___Optical_Marker_Tracking___Phone.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="5/9/2013 1:46:46 PM">
+﻿<xapCache source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\..\..\bin\Windows Phone\Tutorial8___Optical_Marker_Tracking___Phone.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="5/10/2013 9:56:46 AM">
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\..\..\bin\Windows Phone\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="5/9/2013 10:36:27 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\Background.png.png" archivePath="Background.png.png" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\Background.png.png" archivePath="Background.png.png" lastWriteTime="5/9/2013 10:36:26 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.dll" archivePath="Tutorial8 - Optical Marker Tracking - Silverlight.dll" lastWriteTime="5/9/2013 1:46:39 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\BounceLib.dll" archivePath="BounceLib.dll" lastWriteTime="5/9/2013 1:46:36 PM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\obj\Debug\Tutorial8 - Optical Marker Tracking - Silverlight.dll" archivePath="Tutorial8 - Optical Marker Tracking - Silverlight.dll" lastWriteTime="5/10/2013 9:56:41 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\BounceLib.dll" archivePath="BounceLib.dll" lastWriteTime="5/10/2013 9:56:39 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\GoblinXNA.dll" archivePath="GoblinXNA.dll" lastWriteTime="5/9/2013 10:42:51 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\bin\Windows Phone\MataliPhysics.dll" archivePath="MataliPhysics.dll" lastWriteTime="5/9/2013 10:42:51 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitCS.dll" archivePath="NyARToolkitCS.dll" lastWriteTime="5/9/2013 10:36:27 AM" />
@@ -15,88 +15,92 @@
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\BounceIcon.png" archivePath="BounceIcon.png" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\GameThumbnail.png" archivePath="GameThumbnail.png" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\Tutorial8 - Optical Marker Tracking\Silverlight\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="5/9/2013 10:36:26 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="5/9/2013 1:46:41 PM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="5/10/2013 9:33:41 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\fire.png" archivePath="Content\fire.png" lastWriteTime="5/9/2013 10:36:26 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.xnb" archivePath="Content\Object.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.xnb" archivePath="Content\rotation.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotate.xnb" archivePath="Content\rotate.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\S.xnb" archivePath="Content\S.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\t.xnb" archivePath="Content\t.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\camera.xnb" archivePath="Content\camera.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\transfer.xnb" archivePath="Content\transfer.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.xnb" archivePath="Content\reset.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingsticktexture.xnb" archivePath="Content\hikingsticktexture.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\fire.xnb" archivePath="Content\fire.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\smoke.xnb" archivePath="Content\smoke.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\explosion.xnb" archivePath="Content\explosion.xnb" lastWriteTime="5/9/2013 1:46:22 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\size.xnb" archivePath="Content\size.xnb" lastWriteTime="5/9/2013 1:46:23 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\golf_ball.xnb" archivePath="Content\golf_ball.xnb" lastWriteTime="5/9/2013 1:46:25 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.xnb" archivePath="Content\hikingstick3.xnb" lastWriteTime="5/9/2013 1:46:25 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.xnb" archivePath="Content\bouncelevel1panels.xnb" lastWriteTime="5/9/2013 1:46:25 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cancel.xnb" archivePath="Content\Cancel.xnb" lastWriteTime="5/9/2013 1:46:25 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Exit.xnb" archivePath="Content\Exit.xnb" lastWriteTime="5/9/2013 1:46:25 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Reset2.xnb" archivePath="Content\Reset2.xnb" lastWriteTime="5/9/2013 1:46:26 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Rsign.xnb" archivePath="Content\Rsign.xnb" lastWriteTime="5/9/2013 1:46:26 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Save.xnb" archivePath="Content\Save.xnb" lastWriteTime="5/9/2013 1:46:27 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Youwon.xnb" archivePath="Content\Youwon.xnb" lastWriteTime="5/9/2013 1:46:27 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Aim.xnb" archivePath="Content\Aim.xnb" lastWriteTime="5/9/2013 1:46:27 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Ball.xnb" archivePath="Content\Ball.xnb" lastWriteTime="5/9/2013 1:46:27 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel11panels.xnb" archivePath="Content\bouncelevel11panels.xnb" lastWriteTime="5/9/2013 1:46:28 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel15panels.xnb" archivePath="Content\bouncelevel15panels.xnb" lastWriteTime="5/9/2013 1:46:28 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel2panels.xnb" archivePath="Content\bouncelevel2panels.xnb" lastWriteTime="5/9/2013 1:46:28 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel3panels.xnb" archivePath="Content\bouncelevel3panels.xnb" lastWriteTime="5/9/2013 1:46:28 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\BounceStartScene.xnb" archivePath="Content\BounceStartScene.xnb" lastWriteTime="5/9/2013 1:46:28 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cue.xnb" archivePath="Content\Cue.xnb" lastWriteTime="5/9/2013 1:46:32 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Gameboard.xnb" archivePath="Content\Gameboard.xnb" lastWriteTime="5/9/2013 1:46:32 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel1.xnb" archivePath="Content\goallevel1.xnb" lastWriteTime="5/9/2013 1:46:34 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel11.xnb" archivePath="Content\goallevel11.xnb" lastWriteTime="5/9/2013 1:46:34 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel15.xnb" archivePath="Content\goallevel15.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel2.xnb" archivePath="Content\goallevel2.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel3.xnb" archivePath="Content\goallevel3.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel4.xnb" archivePath="Content\goallevel4.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\X.xnb" archivePath="Content\X.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel4panels.xnb" archivePath="Content\bouncelevel4panels.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.xnb" archivePath="Content\UIFont.xnb" lastWriteTime="5/9/2013 1:46:36 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.xnb" archivePath="Content\Sample.xnb" lastWriteTime="5/9/2013 1:46:36 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.xnb" archivePath="Content\DebugFont.xnb" lastWriteTime="5/9/2013 1:46:36 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube_2Surface_Color_0.xnb" archivePath="Content\Cube_2Surface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:23 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CylinderSurface_Color_0.xnb" archivePath="Content\CylinderSurface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:23 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_0.xnb" archivePath="Content\Cap_1Surface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:23 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBSSurface_Color_0.xnb" archivePath="Content\Sweep_NURBSSurface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:23 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_0.xnb" archivePath="Content\CubeSurface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:23 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb" archivePath="Content\Cube2.1Surface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:25 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_1.xnb" archivePath="Content\Cap_1Surface_Color_1.xnb" lastWriteTime="5/9/2013 1:46:25 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_0.xnb" archivePath="Content\Cap_2Surface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:25 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_0.xnb" archivePath="Content\Extrude_NURBSSurface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:25 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_2.xnb" archivePath="Content\Cap_1Surface_Color_2.xnb" lastWriteTime="5/9/2013 1:46:26 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_1.xnb" archivePath="Content\Cap_2Surface_Color_1.xnb" lastWriteTime="5/9/2013 1:46:26 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_1.xnb" archivePath="Content\Extrude_NURBSSurface_Color_1.xnb" lastWriteTime="5/9/2013 1:46:26 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_3.xnb" archivePath="Content\Cap_1Surface_Color_3.xnb" lastWriteTime="5/9/2013 1:46:26 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_2.xnb" archivePath="Content\Cap_2Surface_Color_2.xnb" lastWriteTime="5/9/2013 1:46:26 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_2.xnb" archivePath="Content\Extrude_NURBSSurface_Color_2.xnb" lastWriteTime="5/9/2013 1:46:26 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBS.1Surface_Color_0.xnb" archivePath="Content\Sweep_NURBS.1Surface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:26 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_4.xnb" archivePath="Content\Cap_1Surface_Color_4.xnb" lastWriteTime="5/9/2013 1:46:27 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_3.xnb" archivePath="Content\Cap_2Surface_Color_3.xnb" lastWriteTime="5/9/2013 1:46:27 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_3.xnb" archivePath="Content\Extrude_NURBSSurface_Color_3.xnb" lastWriteTime="5/9/2013 1:46:27 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_1.xnb" archivePath="Content\CubeSurface_Color_1.xnb" lastWriteTime="5/9/2013 1:46:27 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\TorusSurface_Color_0.xnb" archivePath="Content\TorusSurface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:27 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\SphereSurface_Color_0.xnb" archivePath="Content\SphereSurface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:28 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Torus.1Surface_Color_0.xnb" archivePath="Content\Torus.1Surface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:28 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\mainpanel.1Surface_Color_0.xnb" archivePath="Content\mainpanel.1Surface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:28 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube2.1Surface_Color_1.xnb" archivePath="Content\Cube2.1Surface_Color_1.xnb" lastWriteTime="5/9/2013 1:46:28 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube2.1Surface_Color_2.xnb" archivePath="Content\Cube2.1Surface_Color_2.xnb" lastWriteTime="5/9/2013 1:46:28 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_2.xnb" archivePath="Content\CubeSurface_Color_2.xnb" lastWriteTime="5/9/2013 1:46:30 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube.1Surface_Color_0.xnb" archivePath="Content\Cube.1Surface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:32 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Oil_TankSurface_Color_0.xnb" archivePath="Content\Oil_TankSurface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:32 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlaneSurface_Color_0.xnb" archivePath="Content\PlaneSurface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:34 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_0.xnb" archivePath="Content\PlatonicSurface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:34 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_1.xnb" archivePath="Content\PlatonicSurface_Color_1.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_2.xnb" archivePath="Content\PlatonicSurface_Color_2.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_3.xnb" archivePath="Content\PlatonicSurface_Color_3.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_4.xnb" archivePath="Content\PlatonicSurface_Color_4.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_5.xnb" archivePath="Content\PlatonicSurface_Color_5.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube.2Surface_Color_0.xnb" archivePath="Content\Cube.2Surface_Color_0.xnb" lastWriteTime="5/9/2013 1:46:35 PM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Torus.1Surface_Color_1.xnb" archivePath="Content\Torus.1Surface_Color_1.xnb" lastWriteTime="5/9/2013 1:46:36 PM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.xnb" archivePath="Content\Object.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.xnb" archivePath="Content\rotation.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotate.xnb" archivePath="Content\rotate.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\S.xnb" archivePath="Content\S.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\t.xnb" archivePath="Content\t.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\camera.xnb" archivePath="Content\camera.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\transfer.xnb" archivePath="Content\transfer.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.xnb" archivePath="Content\reset.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingsticktexture.xnb" archivePath="Content\hikingsticktexture.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\fire.xnb" archivePath="Content\fire.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\smoke.xnb" archivePath="Content\smoke.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\explosion.xnb" archivePath="Content\explosion.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\size.xnb" archivePath="Content\size.xnb" lastWriteTime="5/10/2013 9:33:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\golf_ball.xnb" archivePath="Content\golf_ball.xnb" lastWriteTime="5/10/2013 9:33:24 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.xnb" archivePath="Content\hikingstick3.xnb" lastWriteTime="5/10/2013 9:33:24 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.xnb" archivePath="Content\bouncelevel1panels.xnb" lastWriteTime="5/10/2013 9:33:24 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cancel.xnb" archivePath="Content\Cancel.xnb" lastWriteTime="5/10/2013 9:33:25 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Exit.xnb" archivePath="Content\Exit.xnb" lastWriteTime="5/10/2013 9:33:25 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Reset2.xnb" archivePath="Content\Reset2.xnb" lastWriteTime="5/10/2013 9:33:26 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Rsign.xnb" archivePath="Content\Rsign.xnb" lastWriteTime="5/10/2013 9:33:26 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Save.xnb" archivePath="Content\Save.xnb" lastWriteTime="5/10/2013 9:33:26 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Youwon.xnb" archivePath="Content\Youwon.xnb" lastWriteTime="5/10/2013 9:33:27 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Aim.xnb" archivePath="Content\Aim.xnb" lastWriteTime="5/10/2013 9:33:27 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Ball.xnb" archivePath="Content\Ball.xnb" lastWriteTime="5/10/2013 9:33:27 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel11panels.xnb" archivePath="Content\bouncelevel11panels.xnb" lastWriteTime="5/10/2013 9:33:27 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel15panels.xnb" archivePath="Content\bouncelevel15panels.xnb" lastWriteTime="5/10/2013 9:33:27 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel2panels.xnb" archivePath="Content\bouncelevel2panels.xnb" lastWriteTime="5/10/2013 9:33:28 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel3panels.xnb" archivePath="Content\bouncelevel3panels.xnb" lastWriteTime="5/10/2013 9:33:28 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\BounceStartScene.xnb" archivePath="Content\BounceStartScene.xnb" lastWriteTime="5/10/2013 9:33:28 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Gameboard.xnb" archivePath="Content\Gameboard.xnb" lastWriteTime="5/10/2013 9:33:33 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel1.xnb" archivePath="Content\goallevel1.xnb" lastWriteTime="5/10/2013 9:33:35 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel11.xnb" archivePath="Content\goallevel11.xnb" lastWriteTime="5/10/2013 9:33:35 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel15.xnb" archivePath="Content\goallevel15.xnb" lastWriteTime="5/10/2013 9:33:35 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel2.xnb" archivePath="Content\goallevel2.xnb" lastWriteTime="5/10/2013 9:33:35 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel3.xnb" archivePath="Content\goallevel3.xnb" lastWriteTime="5/10/2013 9:33:35 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel4.xnb" archivePath="Content\goallevel4.xnb" lastWriteTime="5/10/2013 9:33:36 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\X.xnb" archivePath="Content\X.xnb" lastWriteTime="5/10/2013 9:33:36 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel4panels.xnb" archivePath="Content\bouncelevel4panels.xnb" lastWriteTime="5/10/2013 9:33:36 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cue.xnb" archivePath="Content\Cue.xnb" lastWriteTime="5/10/2013 9:33:36 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cuesmall.xnb" archivePath="Content\Cuesmall.xnb" lastWriteTime="5/10/2013 9:33:37 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cuesmallrot.xnb" archivePath="Content\Cuesmallrot.xnb" lastWriteTime="5/10/2013 9:33:37 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.xnb" archivePath="Content\UIFont.xnb" lastWriteTime="5/10/2013 9:33:37 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.xnb" archivePath="Content\Sample.xnb" lastWriteTime="5/10/2013 9:33:37 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.xnb" archivePath="Content\DebugFont.xnb" lastWriteTime="5/10/2013 9:33:37 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube_2Surface_Color_0.xnb" archivePath="Content\Cube_2Surface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:49 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CylinderSurface_Color_0.xnb" archivePath="Content\CylinderSurface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:49 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_0.xnb" archivePath="Content\Cap_1Surface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:50 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBSSurface_Color_0.xnb" archivePath="Content\Sweep_NURBSSurface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:50 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_0.xnb" archivePath="Content\CubeSurface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:50 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube2.1Surface_Color_0.xnb" archivePath="Content\Cube2.1Surface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:50 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_1.xnb" archivePath="Content\Cap_1Surface_Color_1.xnb" lastWriteTime="5/10/2013 9:33:50 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_0.xnb" archivePath="Content\Cap_2Surface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:50 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_0.xnb" archivePath="Content\Extrude_NURBSSurface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:50 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_2.xnb" archivePath="Content\Cap_1Surface_Color_2.xnb" lastWriteTime="5/10/2013 9:33:50 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_1.xnb" archivePath="Content\Cap_2Surface_Color_1.xnb" lastWriteTime="5/10/2013 9:33:51 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_1.xnb" archivePath="Content\Extrude_NURBSSurface_Color_1.xnb" lastWriteTime="5/10/2013 9:33:51 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_3.xnb" archivePath="Content\Cap_1Surface_Color_3.xnb" lastWriteTime="5/10/2013 9:33:51 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_2.xnb" archivePath="Content\Cap_2Surface_Color_2.xnb" lastWriteTime="5/10/2013 9:33:51 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_2.xnb" archivePath="Content\Extrude_NURBSSurface_Color_2.xnb" lastWriteTime="5/10/2013 9:33:51 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sweep_NURBS.1Surface_Color_0.xnb" archivePath="Content\Sweep_NURBS.1Surface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:51 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_1Surface_Color_4.xnb" archivePath="Content\Cap_1Surface_Color_4.xnb" lastWriteTime="5/10/2013 9:33:51 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cap_2Surface_Color_3.xnb" archivePath="Content\Cap_2Surface_Color_3.xnb" lastWriteTime="5/10/2013 9:33:51 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Extrude_NURBSSurface_Color_3.xnb" archivePath="Content\Extrude_NURBSSurface_Color_3.xnb" lastWriteTime="5/10/2013 9:33:51 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_1.xnb" archivePath="Content\CubeSurface_Color_1.xnb" lastWriteTime="5/10/2013 9:33:52 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\TorusSurface_Color_0.xnb" archivePath="Content\TorusSurface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:52 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\SphereSurface_Color_0.xnb" archivePath="Content\SphereSurface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:52 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Torus.1Surface_Color_0.xnb" archivePath="Content\Torus.1Surface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:52 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\mainpanel.1Surface_Color_0.xnb" archivePath="Content\mainpanel.1Surface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:52 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube2.1Surface_Color_1.xnb" archivePath="Content\Cube2.1Surface_Color_1.xnb" lastWriteTime="5/10/2013 9:33:52 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube2.1Surface_Color_2.xnb" archivePath="Content\Cube2.1Surface_Color_2.xnb" lastWriteTime="5/10/2013 9:33:52 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\CubeSurface_Color_2.xnb" archivePath="Content\CubeSurface_Color_2.xnb" lastWriteTime="5/10/2013 9:33:54 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube.1Surface_Color_0.xnb" archivePath="Content\Cube.1Surface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:56 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlaneSurface_Color_0.xnb" archivePath="Content\PlaneSurface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:58 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_0.xnb" archivePath="Content\PlatonicSurface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:58 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_1.xnb" archivePath="Content\PlatonicSurface_Color_1.xnb" lastWriteTime="5/10/2013 9:33:58 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_2.xnb" archivePath="Content\PlatonicSurface_Color_2.xnb" lastWriteTime="5/10/2013 9:33:58 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_3.xnb" archivePath="Content\PlatonicSurface_Color_3.xnb" lastWriteTime="5/10/2013 9:33:58 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_4.xnb" archivePath="Content\PlatonicSurface_Color_4.xnb" lastWriteTime="5/10/2013 9:33:59 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\PlatonicSurface_Color_5.xnb" archivePath="Content\PlatonicSurface_Color_5.xnb" lastWriteTime="5/10/2013 9:33:59 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cube.2Surface_Color_0.xnb" archivePath="Content\Cube.2Surface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:59 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Torus.1Surface_Color_1.xnb" archivePath="Content\Torus.1Surface_Color_1.xnb" lastWriteTime="5/10/2013 9:33:59 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Oil_TankSurface_Color_0.xnb" archivePath="Content\Oil_TankSurface_Color_0.xnb" lastWriteTime="5/10/2013 9:33:59 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Oil_TankSurface_Color_1.xnb" archivePath="Content\Oil_TankSurface_Color_1.xnb" lastWriteTime="5/10/2013 9:33:59 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Oil_TankSurface_Color_2.xnb" archivePath="Content\Oil_TankSurface_Color_2.xnb" lastWriteTime="5/10/2013 9:33:59 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Object.png" archivePath="Content\Object.png" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\rotation.jpg" archivePath="Content\rotation.jpg" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\UIFont.spritefont" archivePath="Content\UIFont.spritefont" lastWriteTime="5/9/2013 10:36:26 AM" />
@@ -105,37 +109,29 @@
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\reset.jpg" archivePath="Content\reset.jpg" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Sample.spritefont" archivePath="Content\Sample.spritefont" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\DebugFont.spritefont" archivePath="Content\DebugFont.spritefont" lastWriteTime="5/9/2013 10:36:25 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\hikingstick3.fbx" archivePath="Content\hikingstick3.fbx" lastWriteTime="5/9/2013 10:36:26 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.fbx" archivePath="Content\bouncelevel1panels.fbx" lastWriteTime="5/9/2013 10:50:28 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel1panels.fbx" archivePath="Content\bouncelevel1panels.fbx" lastWriteTime="5/9/2013 6:12:50 PM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\smoke.png" archivePath="Content\smoke.png" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\explosion.png" archivePath="Content\explosion.png" lastWriteTime="5/9/2013 10:36:26 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Cancel.fbx" archivePath="Content\Cancel.fbx" lastWriteTime="5/9/2013 10:50:29 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Exit.fbx" archivePath="Content\Exit.fbx" lastWriteTime="5/9/2013 10:50:29 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Reset2.fbx" archivePath="Content\Reset2.fbx" lastWriteTime="5/9/2013 10:36:26 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Rsign.fbx" archivePath="Content\Rsign.fbx" lastWriteTime="5/9/2013 10:50:30 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Save.fbx" archivePath="Content\Save.fbx" lastWriteTime="5/9/2013 10:50:30 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Youwon.fbx" archivePath="Content\Youwon.fbx" lastWriteTime="5/9/2013 10:50:30 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Aim.fbx" archivePath="Content\Aim.fbx" lastWriteTime="5/9/2013 10:50:28 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Ball.fbx" archivePath="Content\Ball.fbx" lastWriteTime="5/9/2013 10:39:22 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel11panels.fbx" archivePath="Content\bouncelevel11panels.fbx" lastWriteTime="5/9/2013 10:50:29 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel15panels.fbx" archivePath="Content\bouncelevel15panels.fbx" lastWriteTime="5/9/2013 10:50:29 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel2panels.fbx" archivePath="Content\bouncelevel2panels.fbx" lastWriteTime="5/9/2013 10:50:28 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel2panels.fbx" archivePath="Content\bouncelevel2panels.fbx" lastWriteTime="5/9/2013 6:22:50 PM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel3panels.fbx" archivePath="Content\bouncelevel3panels.fbx" lastWriteTime="5/9/2013 10:50:28 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\BounceStartScene.fbx" archivePath="Content\BounceStartScene.fbx" lastWriteTime="5/9/2013 10:50:29 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\Gameboard.fbx" archivePath="Content\Gameboard.fbx" lastWriteTime="5/9/2013 10:50:29 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel1.fbx" archivePath="Content\goallevel1.fbx" lastWriteTime="5/9/2013 10:39:22 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel11.fbx" archivePath="Content\goallevel11.fbx" lastWriteTime="5/9/2013 10:39:22 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel15.fbx" archivePath="Content\goallevel15.fbx" lastWriteTime="5/9/2013 10:39:22 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel2.fbx" archivePath="Content\goallevel2.fbx" lastWriteTime="5/9/2013 10:39:22 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel3.fbx" archivePath="Content\goallevel3.fbx" lastWriteTime="5/9/2013 10:39:22 AM" />
-  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel4.fbx" archivePath="Content\goallevel4.fbx" lastWriteTime="5/9/2013 10:39:22 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel1.fbx" archivePath="Content\goallevel1.fbx" lastWriteTime="5/9/2013 3:14:20 PM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel11.fbx" archivePath="Content\goallevel11.fbx" lastWriteTime="5/8/2013 8:22:25 PM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel15.fbx" archivePath="Content\goallevel15.fbx" lastWriteTime="5/8/2013 8:31:54 PM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel2.fbx" archivePath="Content\goallevel2.fbx" lastWriteTime="5/9/2013 6:23:12 PM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel3.fbx" archivePath="Content\goallevel3.fbx" lastWriteTime="5/8/2013 8:25:29 PM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\goallevel4.fbx" archivePath="Content\goallevel4.fbx" lastWriteTime="5/8/2013 8:24:02 PM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\Content\bouncelevel4panels.fbx" archivePath="Content\bouncelevel4panels.fbx" lastWriteTime="5/9/2013 1:43:34 PM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARIdGroundArray.xml" archivePath="NyARIdGroundArray.xml" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitGroundArray.xml" archivePath="NyARToolkitGroundArray.xml" lastWriteTime="5/9/2013 10:36:26 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceCue.xml" archivePath="NyARToolkitIDBounceCue.xml" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu1.xml" archivePath="NyARToolkitIDBounceMenu1.xml" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu2.xml" archivePath="NyARToolkitIDBounceMenu2.xml" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu3.xml" archivePath="NyARToolkitIDBounceMenu3.xml" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceMenu4.xml" archivePath="NyARToolkitIDBounceMenu4.xml" lastWriteTime="5/9/2013 10:36:26 AM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceReset.xml" archivePath="NyARToolkitIDBounceReset.xml" lastWriteTime="5/9/2013 1:34:36 PM" />
+  <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDBounceToolbar.xml" archivePath="NyARToolkitIDBounceToolbar.xml" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDGroundArray.xml" archivePath="NyARToolkitIDGroundArray.xml" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar3.xml" archivePath="NyARToolkitIDToolbar3.xml" lastWriteTime="5/9/2013 10:36:26 AM" />
   <file source="\\psf\Home\Desktop\GitHub\bounce\Tutorial - Zhixiang Wu\bin\Windows Phone\NyARToolkitIDToolbar4.xml" archivePath="NyARToolkitIDToolbar4.xml" lastWriteTime="5/9/2013 10:36:26 AM" />

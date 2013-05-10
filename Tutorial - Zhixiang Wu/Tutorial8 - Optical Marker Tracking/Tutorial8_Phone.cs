@@ -104,6 +104,7 @@ namespace BounceLib
         TransformNode goalTransNode;
         GeometryNode levelNode;
         TransformNode levelTransNode;
+        TransformNode levelGoalTransNode;
         GeometryNode levelCompletedNode;
         TransformNode levelCompletedTransNode;
         GeometryNode poleNode;
@@ -116,19 +117,20 @@ namespace BounceLib
         //list of all the level models
         List<Model> levelModelList = new List<Model>();
         List<Model> goalModelList = new List<Model>();
+        List<Model> groundModelList = new List<Model>();
 
         // Scaling and Rotation Variables
-        string gameMode = "ROTATION"; //designates transformation mode, takes on values of "ROTATION" and "SCALING" (and "" for neither)
+        string gameMode = "SHOOTING"; //designates transformation mode, takes on values of "ROTATION" and "SCALING" (and "" for neither)
         string selectedObj = ""; //designates selected object by name
         Vector3 initialSelectedPosition = new Vector3(-1, -1, -1); //stores initial position of selected object
 
-        int currentLevel = 1; //designates the current level the game is on
+        int currentLevel = 0; //designates the current level the game is on
         int collisionCounter = 0; //counts the number of collisions a ball has made on a single level
         int minNumCollisions = 0; //designates the minimum number of collisions required for a single level
         int levelCompletedRotAngle = 0; //designates rotation angle for level completed icon model
         int gameStartRotAngle = 0; //designates the rotation angle for the game start icon model
 
-        bool ball_on = false;
+        bool ballShot = false;
         string resultlabel = "";
         int countdown = 0;
         int laserNum = 0;
@@ -191,8 +193,6 @@ namespace BounceLib
             //MouseInput.Instance.MouseClickEvent += new HandleMouseClick(MouseClickHandler);
 
             State.ThreadOption = (ushort)ThreadOptions.MarkerTracking;
-
-            CreateTags(content);
 
             // Set up the lights used in the scene
             CreateLights();
@@ -442,7 +442,7 @@ namespace BounceLib
             toolbarMarkerNode2 = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDBounceCue.xml",
                 NyARToolkitTracker.ComputationMethod.Average);
             scene.RootNode.AddChild(toolbarMarkerNode2);
-            resetMarkerNode = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDToolbar5.xml",
+            resetMarkerNode = new MarkerNode(scene.MarkerTracker, "NyARToolkitIDBounceReset.xml",
                 NyARToolkitTracker.ComputationMethod.Average);
             scene.RootNode.AddChild(resetMarkerNode);
 
@@ -470,7 +470,7 @@ namespace BounceLib
         private void CreateModels()
         {
             ModelLoader loader = new ModelLoader();
-            float scale2 = 1;
+            float scale2 = 0.25f;
             //not sure if necessary to scale, find a good number later
             //if (levelNode != null && levelNode.Model != null )
             //{
@@ -480,7 +480,7 @@ namespace BounceLib
 
             //}
 
-            #region preload all the level and goal models into levelModelList and goalModelList
+            #region preload all the level, ground and goal models into levelModelList and goalModelList
             for (int i = 1; i <= 4; i++)
             {
                 levelModelList.Add((Model)loader.Load("", String.Format("bouncelevel{0}panels", i)));
@@ -505,6 +505,7 @@ namespace BounceLib
                 Scale = new Vector3(scale2, scale2, scale2)
             };
 
+            gameStartNode.Physics = new MataliObject(gameStartNode);
             gameStartNode.Physics.MaterialName = "gameStartModel";
             gameStartNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
             gameStartNode.Physics.Collidable = true;
@@ -514,28 +515,36 @@ namespace BounceLib
             groundMarkerNode.AddChild(gameStartTransNode);
             gameStartTransNode.AddChild(gameStartTransNode1);
             gameStartTransNode1.AddChild(gameStartNode);
+            //gameStartNode.Enabled = false;
             #endregion
 
-            #region load the model for the floor
+            #region load the model for the game board
             gameBoardNode = new GeometryNode("gameBoardModel");
             gameBoardNode.Model = (Model)loader.Load("", "Gameboard");
             ((Model)gameBoardNode.Model).UseInternalMaterials = true;
 
+            TransformNode gameBoardTransNode1 = new TransformNode()
+            {
+                //Translation = new Vector3(0, 0, -100)
+            };
             TransformNode gameBoardTransNode = new TransformNode()
             {
+                Translation = new Vector3(10000, 10000, 10000),
                 Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90)),
                 Scale = new Vector3(scale2, scale2, scale2)
             };
 
+            gameBoardNode.Physics = new MataliObject(gameBoardNode);
             gameBoardNode.Physics.MaterialName = "gameBoardModel";
-            gameBoardNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
+            gameBoardNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Box;
             gameBoardNode.Physics.Collidable = true;
             gameBoardNode.Physics.Mass = 100f;
             gameBoardNode.AddToPhysicsEngine = true;
 
-            groundMarkerNode.AddChild(gameBoardTransNode);
+            groundMarkerNode.AddChild(gameBoardTransNode1);
+            gameBoardTransNode1.AddChild(gameBoardTransNode);
             gameBoardTransNode.AddChild(gameBoardNode);
-            gameBoardNode.Enabled = false; //initially disabled at game start
+            //gameBoardNode.Enabled = false; //initially disabled at game start
             #endregion
 
             /* Game levels models will be swapped by interchanging the models for the levelNode geometry node.
@@ -549,13 +558,17 @@ namespace BounceLib
             levelNode.Model = levelModelList[0];
             ((Model)levelNode.Model).UseInternalMaterials = true;
 
-            levelTransNode = new TransformNode();
-            TransformNode levelTransNode1 = new TransformNode() //apply initial rotation and scaling
+            levelTransNode = new TransformNode()
+            {
+                Translation = new Vector3(10000, 10000, 10000)
+            };
+            TransformNode levelTransNode1 = new TransformNode()
             {
                 Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90)),
                 Scale = new Vector3(scale2, scale2, scale2)
             };
 
+            levelNode.Physics = new MataliObject(levelNode);
             levelNode.Physics.MaterialName = "levelModel";
             levelNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
             levelNode.Physics.Collidable = true;
@@ -565,77 +578,95 @@ namespace BounceLib
             groundMarkerNode.AddChild(levelTransNode);
             levelTransNode.AddChild(levelTransNode1);
             levelTransNode1.AddChild(levelNode);
-            levelNode.Enabled = false; //initially disabled at game start
+            //levelNode.Enabled = false; //initially disabled at game start
             #endregion
 
             #region load model for goal detection
             goalNode = new GeometryNode("goalModel");
-            goalNode.Model = goalModelList[0];
-            ((Model)goalNode.Model).UseInternalMaterials = true;
+            goalNode.Model = new Sphere(60, 16, 16);
+            //((Model)goalNode.Model).UseInternalMaterials = true;
 
-            goalTransNode = new TransformNode();
-            TransformNode goalTransNode1 = new TransformNode()
+            Material goalMat = new Material();
+            goalMat.Diffuse = Color.Red.ToVector4();
+            goalNode.Material = goalMat;
+
+            //our goal models were causing a lot of lag when being loaded as
+            //triangle meshes and causing inaccurate physics engine issues with collision when
+            //loaded otherwise so we had to create a simple sphere and then position it
+            //where the model was originally
+            goalTransNode = new TransformNode()
+            {
+                Translation = new Vector3(10000, 10000, 10000)
+            };
+            TransformNode goalTransNode2 = new TransformNode()
             {
                 Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90)),
                 Scale = new Vector3(scale2, scale2, scale2)
             };
+            TransformNode goalTransNode1 = new TransformNode()
+            {
+                Translation = goalModelList[0].MinimumBoundingSphere.Center
+            };
 
+            goalNode.Physics = new MataliObject(goalNode);
             goalNode.Physics.MaterialName = "goalModel";
-            goalNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
+            goalNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Sphere;
             goalNode.Physics.Collidable = true;
             goalNode.Physics.Mass = 100f;
             goalNode.AddToPhysicsEngine = true;
 
             groundMarkerNode.AddChild(goalTransNode);
-            goalTransNode.AddChild(goalTransNode1);
+            goalTransNode.AddChild(goalTransNode2);
+            goalTransNode2.AddChild(goalTransNode1);
             goalTransNode1.AddChild(goalNode);
-            goalNode.Enabled = false; //initially disabled at game start
+            //goalNode.Enabled = false; //initially disabled at game start
             #endregion
 
             #region load the cue stick model
-            poleNode = new GeometryNode("Pole");
-            poleNode.Model = (Model)loader.Load("", "Cue");
+            poleNode = new GeometryNode("poleModel");
+            poleNode.Model = (Model)loader.Load("", "Cuesmall");
             ((Model)poleNode.Model).UseInternalMaterials = true;
 
-            poleTransNode = new TransformNode()
-            {
-                Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90)),
-                Scale = new Vector3(scale2, scale2, scale2)
-            };
-            poleTransNode.Translation = new Vector3(-3 * markerSize, -3 * markerSize, 0);
+            poleTransNode = new TransformNode();
 
             poleNode.Physics = new MataliObject(poleNode);
             ((MataliObject)poleNode.Physics).CollisionStartCallback = ToolBar1CollideWithObject;
-            poleNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
+            poleNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Box;
             poleNode.Physics.Collidable = true;
             poleNode.Physics.Mass = 100f;
             poleNode.AddToPhysicsEngine = true;
 
             groundMarkerNode.AddChild(poleTransNode);
             poleTransNode.AddChild(poleNode);
+            poleNode.Enabled = false; //disable if there is no toolbar node visible in the scene
             #endregion
 
-            #region load the ball object
-            ballNode = new GeometryNode("ball");
-            ballNode.Model = (Model)loader.Load("", "Ball");
-            ((Model)ballNode.Model).UseInternalMaterials = true;
+            #region load the ball model
+            //ballNode = new GeometryNode("ballModel");
+            //ballNode.Model = new Sphere(12, 16, 16);// (Model)loader.Load("", "Ball");
+            ////((Model)ballNode.Model).UseInternalMaterials = true;
 
-            ballTransNode = new TransformNode();
-            ballTransNode.Translation = new Vector3(0, 75, 0);
-            ballTransNode.Translation = new Vector3(-3 * markerSize, -3 * markerSize + 75, 0);
+            //Material ballMat = new Material();
+            //ballMat.Diffuse = Color.Green.ToVector4();
+            //ballNode.Material = ballMat;
 
-            ballNode.Physics = new MataliObject(ballNode);
-            ((MataliObject)ballNode.Physics).CollisionStartCallback = BallCollideWithObject;
-            ((MataliObject)ballNode.Physics).Restitution = 1f;
-            ballNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
-            ballNode.Physics.Interactable = true;
-            ballNode.Physics.Collidable = true;
-            ballNode.Physics.Mass = 10f;
-            ballNode.AddToPhysicsEngine = true;
+            //ballTransNode = new TransformNode();
+            ////ballTransNode.Scale = new Vector3(scale2, scale2, scale2);
+            ////ballTransNode.Translation = new Vector3(0, 75, 0);
+            ////ballTransNode.Translation = new Vector3(-3 * markerSize, -3 * markerSize + 75, 0);
 
-            groundMarkerNode.AddChild(ballTransNode);
-            ballTransNode.AddChild(ballNode);
-            ballNode.Enabled = false; //initially disabled at game start 
+            //ballNode.Physics = new MataliObject(ballNode);
+            //((MataliObject)ballNode.Physics).CollisionStartCallback = BallCollideWithObject;
+            //((MataliObject)ballNode.Physics).Restitution = 1f;
+            //ballNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Sphere;
+            //ballNode.Physics.Interactable = true;
+            //ballNode.Physics.Collidable = true;
+            //ballNode.Physics.Mass = 10f;
+            //ballNode.AddToPhysicsEngine = true;
+
+            //groundMarkerNode.AddChild(ballTransNode);
+            //ballTransNode.AddChild(ballNode);
+            //ballNode.Enabled = false; //initially disabled at game start 
             #endregion
 
             #region load the model for level transition after completion of a level
@@ -643,15 +674,19 @@ namespace BounceLib
             levelCompletedNode.Model = (Model)loader.Load("", "Youwon");
             ((Model)levelCompletedNode.Model).UseInternalMaterials = true;
 
-            levelCompletedTransNode = new TransformNode();
+            levelCompletedTransNode = new TransformNode()
+            {
+                Translation = new Vector3(10000, 10000, 10000)
+            };
             TransformNode levelCompletedTransNode1 = new TransformNode()
             {
                 Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitX, MathHelper.ToRadians(90)),
                 Scale = new Vector3(scale2, scale2, scale2)
             };
 
+            levelCompletedNode.Physics = new MataliObject(levelCompletedNode);
             levelCompletedNode.Physics.MaterialName = "levelCompletedModel";
-            levelCompletedNode.Physics.Shape = GoblinXNA.Physics.ShapeType.TriangleMesh;
+            levelCompletedNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Box;
             levelCompletedNode.Physics.Collidable = true;
             levelCompletedNode.Physics.Mass = 100f;
             levelCompletedNode.AddToPhysicsEngine = true;
@@ -659,7 +694,7 @@ namespace BounceLib
             groundMarkerNode.AddChild(levelCompletedTransNode);
             levelCompletedTransNode.AddChild(levelCompletedTransNode1);
             levelCompletedTransNode1.AddChild(levelCompletedNode);
-            levelCompletedNode.Enabled = false; //disable at first, enable once a level has ended
+            //levelCompletedNode.Enabled = false; //disable at first, enable once a level has ended
             #endregion
 
             laserGroup = new TransformNode();
@@ -805,16 +840,6 @@ namespace BounceLib
             
             switch (materialName)
             {
-                case "gameStartModel":
-                    //increment the current level to 1
-                    currentLevel++;
-
-                    gameStartNode.Enabled = false;
-                    gameBoardNode.Enabled = true;
-                    levelNode.Enabled = true;
-                    goalNode.Enabled = true;
-                    ballNode.Enabled = true;
-                    break;
                 case "levelModel":
                     if (gameMode == "ROTATION" || gameMode == "SCALING")
                     {
@@ -824,23 +849,6 @@ namespace BounceLib
                         initialSelectedPosition = poleNode.WorldTransformation.Translation;
                         selectedObj = "levelModel";
                     }
-                    break;
-                case "levelCompletedModel":
-                    Notifier.AddMessage(String.Format("Moving on to level {0}...", currentLevel));
-
-                    //increment the current level
-                    currentLevel++;
-
-                    //update the panels and goal models for the next level
-                    levelNode.Model = levelModelList[currentLevel - 1];
-                    goalNode.Model = goalModelList[currentLevel - 1];
-
-                    //swap level panels model for level transition model
-                    levelCompletedNode.Enabled = false;
-                    gameBoardNode.Enabled = true;
-                    levelNode.Enabled = true;
-                    goalNode.Enabled = true;
-                    ballNode.Enabled = true;
                     break;
             }
         }
@@ -853,25 +861,139 @@ namespace BounceLib
         {
             string materialName = ((IPhysicsObject)collidingObject.UserTagObj).MaterialName;
 
+            Matrix removalMat = Matrix.CreateTranslation(new Vector3(10000, 10000, 10000));
+            Matrix addMat = Matrix.CreateTranslation(Vector3.Zero); // (new Vector3(-10000, -10000, -10000));
+            Vector3 removalVect = new Vector3(10000, 10000, 10000);
+            Vector3 addVect = Vector3.Zero;
+
             switch (materialName)
             {
-                case "levelModel":
-                    Notifier.AddMessage("Ball has collided with a panel!");
+                case "gameStartModel":
+                    //increment the current level to 1
+                    Notifier.AddMessage("hit game start!");
+                    currentLevel++;
 
-                    collisionCounter++;
+                    laserNum = 0;
+                    laserGroup.RemoveChildren();
+
+                    //gameStartNode.Enabled = false;
+                    gameStartTransNode.Translation = removalVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(gameStartNode.Physics, removalMat);
+                    //scene.PhysicsEngine.RemovePhysicsObject(gameStartNode.Physics);
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)gameStartNode.Physics).EnableCollisions = false;
+                    
+                    //((TransformNode)gameStartNode.Parent).Translation = removalVect;
+                    //((MataliPhysics)scene.PhysicsEngine).SetTransform(gameStartNode.Physics, removalMat);
+
+                    //gameBoardNode.Enabled = true;
+                    //scene.GetNode("gameBoardModel").Enabled = true;
+                    ((TransformNode)gameBoardNode.Parent).Translation = addVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(gameBoardNode.Physics, addMat);
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)gameBoardNode.Physics).EnableCollisions = true;
+                    //((TransformNode)gameBoardNode.Parent).Translation = addVect;
+                    
+
+                    //levelNode.Enabled = true;
+                    //scene.GetNode("levelModel").Enabled = true;
+                    levelTransNode.Translation = addVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(levelNode.Physics, addMat);
+                    //groundMarkerNode.AddChild(levelGoalTransNode);
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)levelNode.Physics).EnableCollisions = true;
+                    //((TransformNode)levelNode.Parent).Translation = addVect;
+
+                    goalTransNode.Translation = addVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(goalNode.Physics, addMat);
+                    //goalNode.Enabled = true;
+                    //scene.GetNode("goalModel").Enabled = true;
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)goalNode.Physics).EnableCollisions = true;
+                    //((TransformNode)goalNode.Parent).Translation = new Vector3(400, 300, 100);
+                    //((MataliPhysics)scene.PhysicsEngine).SetTransform(goalNode.Physics, Matrix.CreateTranslation(50, 500, 100));
+                    break;
+                case "levelModel":
+                    Notifier.AddMessage("Hit a panel!");
+
+                    //upon collision with a panel, increment mass to use as a collision counter
+                    ((IPhysicsObject)collidingObject.UserTagObj).Mass += 1;
                     break;
                 case "goalModel":
-                    if (collisionCounter < minNumCollisions)
+                    if (((IPhysicsObject)collidingObject.UserTagObj).Mass < minNumCollisions)
                         break;
 
                     Notifier.AddMessage(String.Format("You've completed level {0}!", currentLevel));
 
+                    //remove the laser
+                    laserNum = 0;
+                    laserGroup.RemoveChildren();
+                    //scene.PhysicsEngine.RestartsSimulation();
+
                     //swap transition model for level panels model
-                    levelCompletedNode.Enabled = true;
-                    gameBoardNode.Enabled = false;
-                    levelNode.Enabled = false;
-                    goalNode.Enabled = false;
-                    ballNode.Enabled = false;
+                    //levelCompletedNode.Enabled = true;
+                    levelCompletedTransNode.Translation = addVect;
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)levelCompletedNode.Physics).EnableCollisions = true;
+                    //((TransformNode)levelCompletedNode.Parent).Translation = addVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(levelCompletedNode.Physics, addMat);
+
+                    //gameBoardNode.Enabled = false;
+                    ((TransformNode)gameBoardNode.Parent).Translation = removalVect;
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)gameBoardNode.Physics).EnableCollisions = false;
+                    //((TransformNode)gameBoardNode.Parent).Translation = removalVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(gameBoardNode.Physics, removalMat);
+
+                    //levelNode.Enabled = false;
+                    levelTransNode.Translation = removalVect;
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)levelNode.Physics).EnableCollisions = false;
+                    //((TransformNode)levelNode.Parent).Translation = removalVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(levelNode.Physics, removalMat);
+
+                    goalTransNode.Translation = removalVect;
+                    ////goalNode.Enabled = false;
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)goalNode.Physics).EnableCollisions = false;
+                    ////((TransformNode)goalNode.Parent).Translation = removalVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(goalNode.Physics, removalMat);
+                    break;
+                case "levelCompletedModel":
+                    Notifier.AddMessage(String.Format("Moving on to level {0}...", currentLevel));
+
+                    //increment the current level
+                    if (currentLevel < 6)
+                        currentLevel++;
+
+                    laserNum = 0;
+                    laserGroup.RemoveChildren();
+
+                    //update the panels and goal models for the next level
+                    ((MataliPhysics)scene.PhysicsEngine).RemovePhysicsObject((MataliObject)levelNode.Physics);
+                    levelNode.Model = levelModelList[currentLevel - 1];
+                    ((Model)levelNode.Model).UseInternalMaterials = true;
+                    ((MataliPhysics)scene.PhysicsEngine).AddPhysicsObject((MataliObject)levelNode.Physics);//.Model = levelModelList[currentLevel - 1];
+                    
+                    ((TransformNode)goalNode.Parent).Translation = goalModelList[currentLevel - 1].MinimumBoundingSphere.Center;
+                    ((MataliPhysics)scene.PhysicsEngine).SetPosition(goalNode.Physics, goalTransNode.WorldTransformation.Translation);
+                    
+                    //swap level panels model for level transition model
+                    //levelCompletedNode.Enabled = false;
+                    levelCompletedTransNode.Translation = removalVect;
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)levelCompletedNode.Physics).EnableCollisions = false;
+                    //((TransformNode)levelCompletedNode.Parent).Translation = removalVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(levelCompletedNode.Physics, removalMat);
+
+                    //gameBoardNode.Enabled = true;
+                    ((TransformNode)gameBoardNode.Parent).Translation = addVect;
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)gameBoardNode.Physics).EnableCollisions = true;
+                    //((TransformNode)gameBoardNode.Parent).Translation = addVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(gameBoardNode.Physics, addMat);
+
+                    //levelNode.Enabled = true;
+                    levelTransNode.Translation = addVect;
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)levelNode.Physics).EnableCollisions = true;
+                    //((TransformNode)levelNode.Parent).Translation = addVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(levelNode.Physics, addMat);
+
+                    //goalNode.Enabled = true;
+                    //((MataliPhysics)scene.PhysicsEngine).GetMataliPhysicsObject((MataliObject)goalNode.Physics).EnableCollisions = true;
+                    //((TransformNode)goalNode.Parent).Translation = addVect;
+                    goalTransNode.Translation = addVect;
+                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(goalNode.Physics, addMat);
                     break;
             }
         }
@@ -880,7 +1002,6 @@ namespace BounceLib
         {
             if (laserNum > 5){
                 laserGroup.RemoveChildAt(0);                
-                
             }
 
             laserNum++;
@@ -901,18 +1022,17 @@ namespace BounceLib
             ((MataliObject)laserNode.Physics).Restitution = 1f;
             laserNode.Physics.Shape = GoblinXNA.Physics.ShapeType.Sphere;
 
+            laserNode.Physics = new MataliObject(laserNode);
+            ((MataliObject)laserNode.Physics).CollisionEndCallback = BallCollideWithObject;
             laserNode.Physics.Interactable = true;
-            //craftNode.Physics.Pickable = true;
             laserNode.Physics.Collidable = true;
-            laserNode.Physics.Mass = 10f;
-            //ballNode.Physics.InitialLinearVelocity = Vector3.Zero;
+            laserNode.Physics.Mass = 0.0f;
 
             TransformNode laserTransNode = new TransformNode();
             laserTransNode.Translation = new Vector3(0, 75, 0);
             laserTransNode.Translation = new Vector3(-3 * markerSize, -3 * markerSize + 75, 0);
 
             laserGroup.AddChild(laserTransNode);
-            //toolbarMarkerNode1.AddChild(ballTransNode);
             laserTransNode.AddChild(laserNode);
 
 #if WINDOWS_PHONE
@@ -930,7 +1050,7 @@ namespace BounceLib
 
             if (toolbarMarkerNode1.MarkerFound)
             {
-                Vector3 shiftVector2 = new Vector3(0, 95, 0);
+                Vector3 shiftVector2 = new Vector3(-73, 70, 0);
                 Matrix ballmat = Matrix.CreateTranslation(shiftVector2) *
                     toolbarMarkerNode1.WorldTransformation *
                     Matrix.Invert(groundMarkerNode.WorldTransformation);
@@ -1003,35 +1123,31 @@ namespace BounceLib
 
 
             UI2DRenderer.WriteText(new Vector2(10, 10), label, Color.GreenYellow, sampleFont);
-            UI2DRenderer.WriteText(new Vector2(10, 30), ballTransNode.Translation.ToString(), Color.GreenYellow, sampleFont);
+            //UI2DRenderer.WriteText(new Vector2(10, 30), ballTransNode.Translation.ToString(), Color.GreenYellow, sampleFont);
             UI2DRenderer.WriteText(new Vector2(10, 70), resultlabel, Color.GreenYellow, sampleFont);
-            UI2DRenderer.WriteText(new Vector2(10, 100), ballTransNode.Translation.ToString(), Color.GreenYellow, sampleFont);
+            //UI2DRenderer.WriteText(new Vector2(10, 100), ballTransNode.Translation.ToString(), Color.GreenYellow, sampleFont);
 
             if (toolbarMarkerNode1.MarkerFound)
             {
-                Vector3 shiftVector1 = new Vector3(0, 0, 0);
+                poleNode.Enabled = true; //make the toolbar node visible
+                //ballNode.Enabled = true;
+
+                Vector3 shiftVector1 = new Vector3(-73, 70, 0);
                 Matrix polemat = Matrix.CreateTranslation(shiftVector1) *
                     toolbarMarkerNode1.WorldTransformation *
                     Matrix.Invert(groundMarkerNode.WorldTransformation);
                 ((MataliPhysics)scene.PhysicsEngine).SetTransform(poleNode.Physics, polemat);
 
-                if (!ball_on)
-                {
-                    Vector3 shiftVector2 = new Vector3(0, 75, 0);
-                    Matrix ballmat = Matrix.CreateTranslation(shiftVector2) *
-                        toolbarMarkerNode1.WorldTransformation *
-                        Matrix.Invert(groundMarkerNode.WorldTransformation);
-                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, ballmat);
-                    ballTransNode.WorldTransformation = ballmat;
-                }
+                //if (!ballShot)
+                //{
+                //    Vector3 shiftVector2 = new Vector3(-73, 145, 0);
+                //    Matrix ballmat = Matrix.CreateTranslation(shiftVector2) *
+                //        toolbarMarkerNode1.WorldTransformation *
+                //        Matrix.Invert(groundMarkerNode.WorldTransformation);
+                //    ((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, ballmat);
+                //    //ballTransNode.WorldTransformation = ballmat;
+                //}
 
-
-                Vector3 tail = Vector3.Transform(new Vector3(0, 0, 0), toolbarMarkerNode1.WorldTransformation);
-                //tail = Vector3.Transform(tail, Matrix.Invert(groundMarkerNode.WorldTransformation));
-                Vector3 head = Vector3.Transform(new Vector3(0, 75, 0), toolbarMarkerNode1.WorldTransformation);
-                //head = Vector3.Transform(head, Matrix.Invert(groundMarkerNode.WorldTransformation));
-
-                //addLaser(head, tail);
                 #region handle scaling and rotation of the level panels
                 switch (selectedObj)
                 {
@@ -1046,28 +1162,28 @@ namespace BounceLib
                             {
                                 if (cueVector.X < 0)
                                     direction = -1;
-                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationY(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelTransNode.WorldTransformation);
-                                levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
+                                Matrix rotMat = levelGoalTransNode.WorldTransformation * Matrix.CreateRotationY(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelGoalTransNode.WorldTransformation);
+                                levelGoalTransNode.WorldTransformation = rotMat * levelGoalTransNode.WorldTransformation;
                             }
                             else if (abs_cueVector.Y > abs_cueVector.X && abs_cueVector.Y > abs_cueVector.Z)
                             {
                                 if (cueVector.Y > 0)
                                     direction = -1;
-                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationX(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelTransNode.WorldTransformation);
-                                levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
+                                Matrix rotMat = levelGoalTransNode.WorldTransformation * Matrix.CreateRotationX(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelGoalTransNode.WorldTransformation);
+                                levelGoalTransNode.WorldTransformation = rotMat * levelGoalTransNode.WorldTransformation;
                             }
                             else if (abs_cueVector.Z > abs_cueVector.X && abs_cueVector.Z > abs_cueVector.Y)
                             {
                                 if (cueVector.Z > 0)
                                     direction = -1;
-                                Matrix rotMat = levelTransNode.WorldTransformation * Matrix.CreateRotationZ(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelTransNode.WorldTransformation);
-                                levelTransNode.WorldTransformation = rotMat * levelTransNode.WorldTransformation;
+                                Matrix rotMat = levelGoalTransNode.WorldTransformation * Matrix.CreateRotationZ(direction * MathHelper.ToRadians(3)) * Matrix.Invert(levelGoalTransNode.WorldTransformation);
+                                levelGoalTransNode.WorldTransformation = rotMat * levelGoalTransNode.WorldTransformation;
                             }
                         }
                         else if (gameMode == "SCALING" && scaledLength > 100)
                         {
                             float scale = (float)Math.Pow(abs_cueVector.Length() / 100, 2);
-                            levelTransNode.Scale = new Vector3(scale, scale, scale);
+                            levelGoalTransNode.Scale = new Vector3(scale, scale, scale);
                         }
                         break;
                     case "":
@@ -1077,28 +1193,31 @@ namespace BounceLib
             }
             else
             {
-                ((MataliPhysics)scene.PhysicsEngine).SetTransform(poleNode.Physics, Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize, 0));
-                if (!ball_on)
-                {
-                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0));
-                    ballTransNode.WorldTransformation = Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0);
-                }
-
                 selectedObj = "";
+
+                poleNode.Enabled = false;
+                //ballNode.Enabled = false;
+            }
+
+            if (countdown++ == 15)
+            {
+                if (toolbarMarkerNode1.MarkerFound && poleNode.Enabled && gameMode == "SHOOTING")
+                    createLaser();
+                countdown = 0;
             }
 
             #region reset the ball position if resetMarkerNode is visible, only during the shooting mode of the game
-            if (resetMarkerNode.MarkerFound && gameMode == "SHOOTING")
-            {
-                ballNode.Physics.InitialLinearVelocity = new Vector3(0, 0, 0);
+            //if (resetMarkerNode.MarkerFound && gameMode == "SHOOTING")
+            //{
+            //    ballNode.Physics.InitialLinearVelocity = new Vector3(0, 0, 0);
 
-                scene.PhysicsEngine.RestartsSimulation();
-                ((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0));
-                ballTransNode.WorldTransformation = Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0);
+            //    scene.PhysicsEngine.RestartsSimulation();
+            //    ((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0));
+            //    ballTransNode.WorldTransformation = Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0);
 
-                ball_on = false;
-                collisionCounter = 0;
-            }
+            //    ballShot = false;
+            //    collisionCounter = 0;
+            //}
             #endregion
 
             #region add rotation to the game start icon model for flavor
@@ -1120,38 +1239,28 @@ namespace BounceLib
             if (toolbarMarkerNode1.MarkerFound && toolbarMarkerNode2.MarkerFound)
             {
 
-                if (!ball_on)
-                {
-                    Vector3 tail, head, linVel;
-                    tail = Vector3.Transform(new Vector3(0, -150, 0), toolbarMarkerNode1.WorldTransformation);
-                    tail = Vector3.Transform(tail, Matrix.Invert(groundMarkerNode.WorldTransformation));
-                    head = Vector3.Transform(new Vector3(0, 100, 0), toolbarMarkerNode1.WorldTransformation);
-                    head = Vector3.Transform(head, Matrix.Invert(groundMarkerNode.WorldTransformation));
-                    linVel = head - tail;
-                    linVel.Normalize();
-                    linVel *= 2000f;
+                //if (!ballShot)
+                //{
+                //    Vector3 tail, head, linVel;
+                //    tail = Vector3.Transform(new Vector3(0, -150, 0), toolbarMarkerNode1.WorldTransformation);
+                //    tail = Vector3.Transform(tail, Matrix.Invert(groundMarkerNode.WorldTransformation));
+                //    head = Vector3.Transform(new Vector3(0, 100, 0), toolbarMarkerNode1.WorldTransformation);
+                //    head = Vector3.Transform(head, Matrix.Invert(groundMarkerNode.WorldTransformation));
+                //    linVel = head - tail;
+                //    linVel.Normalize();
+                //    linVel *= 2000f;
 
-                    ballNode.Physics.InitialLinearVelocity = linVel;
+                //    ballNode.Physics.InitialLinearVelocity = linVel;
 
-                    laserGroup.RemoveChildren();
-                    laserNum = 0;
-                    scene.PhysicsEngine.RestartsSimulation();
-                    //toolbarMarkerNode1.Update(1 / 30f);
+                //    laserGroup.RemoveChildren();
+                //    laserNum = 0;
+                //    scene.PhysicsEngine.RestartsSimulation();
 
-                    //scene.PhysicsEngine.Update(1 / 30f);
+                //    ballShot = true;
+                //    label = "Shoot!";
 
-                    ball_on = true;
-                    label = "Shoot!";
+                //}
 
-                }
-
-            }
-
-            if (countdown++ == 10)
-            {
-                if (toolbarMarkerNode1.MarkerFound && !ball_on)
-                    createLaser();
-                countdown = 0;
             }
 
             #region check for menu item selection
@@ -1199,36 +1308,6 @@ namespace BounceLib
 
         }
 
-        private void CreateTags(ContentManager content)
-        {
-            G2DPanel cameraframe = new G2DPanel();
-            cameraframe.Bounds = new Rectangle(550, 25, 200, 200);
-            cameraframe.Border = GoblinEnums.BorderFactory.EtchedBorder;
-            cameraframe.Texture = content.Load<Texture2D>("camera");
-            cameraframe.Transparency = 0.5f;  // Ranges from 0 (fully transparent) to 1 (fully opaque)
-            cameraframe.Visible = true;
-
-            G2DButton reset = new G2DButton("reset");
-            reset.TextFont = uiFont;
-            reset.BorderColor = Color.Green;
-            reset.Texture = content.Load<Texture2D>("reset");
-            reset.Bounds = new Rectangle(100, 10, 75, 75);
-            reset.TextTransparency = 0.5f;
-            reset.ActionPerformedEvent += new ActionPerformed(HandleActionPerformed);
-
-            G2DButton transfer = new G2DButton("transfer");
-            transfer.TextFont = uiFont;
-            transfer.BorderColor = Color.Green;
-            transfer.Texture = content.Load<Texture2D>("transfer");
-            transfer.Bounds = new Rectangle(10, 10, 75, 75);
-            transfer.ActionPerformedEvent += new ActionPerformed(HandleActionPerformed);
-
-            cameraframe.AddChild(transfer);
-            cameraframe.AddChild(reset);
-            scene.UIRenderer.Add2DComponent(cameraframe);
-
-        }
-
         //should delete this eventually
         private void HandleActionPerformed(object source)
         {
@@ -1237,17 +1316,17 @@ namespace BounceLib
             switch (comp.Text)
             {
                 case "reset":
-                    ballNode.Physics.InitialLinearVelocity = new Vector3(0, 0, 0);
+                    //ballNode.Physics.InitialLinearVelocity = new Vector3(0, 0, 0);
 
-                    scene.PhysicsEngine.RestartsSimulation();
-                    ((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0));
-                    ballTransNode.WorldTransformation = Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0);
+                    //scene.PhysicsEngine.RestartsSimulation();
+                    //((MataliPhysics)scene.PhysicsEngine).SetTransform(ballNode.Physics, Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0));
+                    //ballTransNode.WorldTransformation = Matrix.CreateTranslation(-3 * markerSize, -3 * markerSize + 75, 0);
 
-                    //toolbarMarkerNode1.Update(1 / 30f);
+                    ////toolbarMarkerNode1.Update(1 / 30f);
 
-                    //scene.PhysicsEngine.Update(1 / 30f);
+                    ////scene.PhysicsEngine.Update(1 / 30f);
 
-                    ball_on = false;
+                    //ballShot = false;
                     break;
 
                 case "Rotation":
